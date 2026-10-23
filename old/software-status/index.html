@@ -1,0 +1,1018 @@
+<!DOCTYPE html><html lang="en-AU" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-kwpuags7"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>Software status | UQ RCC HPC</title><link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v7.4.1"/><meta name="generator" content="Starlight v0.42.6"/><meta property="og:title" content="Software status"/><meta property="og:type" content="article"/><meta property="og:locale" content="en-AU"/><meta property="og:site_name" content="UQ RCC HPC"/><meta name="twitter:card" content="summary_large_image"/><meta name="theme-color" content="#51247A"/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/_astro/print.ehPL0gv-.css" media="print"><link rel="stylesheet" href="/_astro/common.D58dWdyi.css"><script type="module" src="/_astro/page.cNngjUgL.js"></script></head><body class="astro-kwpuags7"><a class="sl-skip-link astro-q6oz67g2" href="#_top">Skip to content</a><div class="page sl-flex astro-y3nufrqf"><header class="header astro-y3nufrqf"><div class="header astro-35hq3lwv"><div class="title-wrapper sl-flex astro-35hq3lwv"><a href="/" class="site-title sl-flex astro-x5yupnqu"><span class="astro-x5yupnqu" translate="no">UQ RCC HPC</span></a></div><div class="sl-flex print:hidden astro-35hq3lwv"><site-search class="astro-35hq3lwv astro-2fpsbkhe" data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-2fpsbkhe"><svg aria-hidden="true" class="astro-2fpsbkhe astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block astro-2fpsbkhe" aria-hidden="true">Search</span><kbd class="sl-hidden md:sl-flex astro-2fpsbkhe" style="display: none;"><kbd class="astro-2fpsbkhe">Ctrl</kbd><kbd class="astro-2fpsbkhe">K</kbd></kbd></button><dialog style="padding:0" aria-label="Search" class="astro-2fpsbkhe"><div class="dialog-frame sl-flex astro-2fpsbkhe"><button data-close-modal class="sl-flex md:sl-hidden astro-2fpsbkhe">Cancel</button><div class="search-container astro-2fpsbkhe"><div id="starlight__search" class="astro-2fpsbkhe"></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/_astro/Search.astro_astro_type_script_index_0_lang.g9hoxVJg.js"></script></div><div class="sl-hidden md:sl-flex print:hidden right-group astro-35hq3lwv"><div class="sl-flex social-icons astro-35hq3lwv"></div><theme-toggle class="astro-vzsv7p5z"><button type="button" aria-label="Toggle colour theme" class="astro-vzsv7p5z"><svg aria-hidden="true" class="auto astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><svg aria-hidden="true" class="light astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg></button></theme-toggle><script type="module">var e=`starlight-theme`,t=[`auto`,`light`,`dark`],n={auto:`Auto`,light:`Light`,dark:`Dark`},r=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,i=()=>r(typeof localStorage<`u`&&localStorage.getItem(e));function a(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var o=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function s(e){document.documentElement.dataset.theme=e===`auto`?o():e,a(e),document.querySelectorAll(`theme-toggle`).forEach(t=>{t.dataset.themePref=e;let r=t.querySelector(`button`);r&&(r.title=`Theme: ${n[e]}`,r.setAttribute(`aria-label`,`Theme: ${n[e]}. Click to change.`))}),window.StarlightThemeProvider&&window.StarlightThemeProvider.updatePickers(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{i()===`auto`&&s(`auto`)});var c=class extends HTMLElement{connectedCallback(){this.dataset.initialised!==`true`&&(this.dataset.initialised=`true`,s(i()),this.querySelector(`button`)?.addEventListener(`click`,()=>{let e=t[(t.indexOf(i())+1)%t.length];s(e)}))}};customElements.define(`theme-toggle`,c);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script></div></div></header><nav class="sidebar print:hidden astro-y3nufrqf" aria-label="Main"><button popovertarget="starlight__sidebar" class="sl-menu-button sl-flex md:sl-hidden print:hidden astro-tfmpqdix"><svg aria-hidden="true" class="open-menu astro-tfmpqdix astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg aria-hidden="true" class="close-menu astro-tfmpqdix astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg><span class="sr-only astro-tfmpqdix">Menu</span></button><script type="module">var e=class extends HTMLElement{constructor(){super();let e=matchMedia(`(min-width: 50em)`),t=()=>{this.popover=e.matches?null:`auto`};t(),e.addEventListener(`change`,()=>t()),this.addEventListener(`toggle`,({newState:e})=>this.trapFocus(e===`open`))}trapFocus(e){document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}};customElements.define(`sl-sidebar-pane`,e);</script><sl-sidebar-pane popover id="starlight__sidebar" class="sidebar-pane astro-y3nufrqf"><div class="sidebar-content sl-flex astro-y3nufrqf"><sl-sidebar-state-persist data-hash="1eyem37" class="astro-m35hxcwh"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/overview/" class="large astro-ywik3xcn"><span class="astro-ywik3xcn">Overview</span></a></li><li class="astro-ywik3xcn"><a href="/bunya-updates/" class="large astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya updates</span></a></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Guides</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Getting Access</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/apply-for-bunya-access/bunyaresourcedistribution/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Access Eligibility</span></a></li><li class="astro-ywik3xcn"><a href="/guides/apply-for-bunya-access/apply-for-access/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Apply for Access</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Getting Started</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="2"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/getting-started/bunya-quick-start-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Quick Start Guide</span></a></li><li class="astro-ywik3xcn"><a href="/guides/getting-started/bunyahardware/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Hardware</span></a></li><li class="astro-ywik3xcn"><a href="/guides/getting-started/general-hpc-videos/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Intro to HPC and Linux Videos</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Accessing Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="3"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/accessing-bunya/connecting-to-bunya/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Connecting to Bunya</span></a></li><li class="astro-ywik3xcn"><a href="/guides/accessing-bunya/bunya-ssh-multiplexing-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">SSH Multiplexing</span></a></li><li class="astro-ywik3xcn"><a href="/guides/accessing-bunya/basics-tmux/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Tmux</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">onBunya Web Interface</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="4"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/onbunya/ondemand-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">onBunya Guide</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Slurm Queue Manager</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="5"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/slurm/fairshare/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Fair Share</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/accounting-group-admin/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Accounting Groups and Administration</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/interactivejobs/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Interactive Jobs</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/partitions/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available Partitions</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/qos/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available QoS</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/batchjobs/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Batch Jobs</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/exampleslurmscripts/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Example Batch Slurm Scripts</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/monitoringjobs/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Monitoring and Deleting Jobs</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/slurm-tips/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Slurm Tips</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/expert-only-mpi-testing/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">MPI Testing for Experts Only</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Data on Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="6"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/data/bunya-userdata-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">User Data Spaces and Quotas</span></a></li><li class="astro-ywik3xcn"><a href="/guides/data/datatransfer/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Transferring Data</span></a></li><li class="astro-ywik3xcn"><a href="/guides/data/list-of-datasets/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available Data Sets and Models</span></a></li><li class="astro-ywik3xcn"><a href="/guides/data/rdm-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">UQRDM Access on Bunya</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Software on Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="7"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/software/list-of-software/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">List of Available Software</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/softwaremodules/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Using Available Software Modules</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/conda-environment/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Conda on Bunya</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/buildingsoftwarecompilers/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Building Your Own Software and Compilers</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/softwarecontainers/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Software Containers</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/basics-apptainer/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Apptainer (Singularity)</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/cryosparc/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">CryoSparc</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/basics-r-versions/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available R versions</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/basics-asreml/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">ASReml</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">AI and LLM on Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="8"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/ai-llm-agents/ai-llm-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">AI LLM Guide</span></a></li><li class="astro-ywik3xcn"><a href="/guides/ai-llm-agents/agents/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">AGENTS.md</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Getting Help</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="9"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/getting-help/getting-help/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Getting Help</span></a></li></ul></details></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Policy</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="10"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/policy/policies/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Overview</span></a></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Conditions of Access</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="11"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/policy/conditions-of-access/bunya-conditions-of-access/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Conditions of Access</span></a></li><li class="astro-ywik3xcn"><a href="/policy/conditions-of-access/uq-conditions-of-access-to-rcc-infrastructure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">UQ Conditions of Access to RCC Infrastructure</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Local Standard Operating Procedures</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="12"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/policy/local-standard-operating-procedures/bunya-accounting-group-operational-procedure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Accounting Group Operational Procedure</span></a></li><li class="astro-ywik3xcn"><a href="/policy/local-standard-operating-procedures/bunya-user-data-spaces-operational-procedure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya User Data Spaces Operational Procedure</span></a></li><li class="astro-ywik3xcn"><a href="/policy/local-standard-operating-procedures/bunya-user-operational-procedure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya User Operational Procedure</span></a></li></ul></details></li></ul></details></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex astro-jhmwgirl"><div class="social-icons astro-jhmwgirl"></div><theme-toggle class="astro-vzsv7p5z"><button type="button" aria-label="Toggle colour theme" class="astro-vzsv7p5z"><svg aria-hidden="true" class="auto astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><svg aria-hidden="true" class="light astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg></button></theme-toggle></div></div></div></sl-sidebar-pane></nav><div class="main-frame astro-y3nufrqf"><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex astro-n673x4eg"><aside class="right-sidebar-container print:hidden astro-n673x4eg"><div class="right-sidebar astro-n673x4eg"><div class="lg:sl-hidden astro-ccg2zjtk"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-ey3vpexq"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-ey3vpexq"><details id="starlight__mobile-toc" class="astro-ey3vpexq"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-ey3vpexq"><span class="toggle sl-flex astro-ey3vpexq">On this page<svg aria-hidden="true" class="caret astro-ey3vpexq astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-ey3vpexq"></span></summary><div class="dropdown astro-ey3vpexq"><ul class="isMobile astro-qyvkd5fr" style="--depth: 0;"><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#_top" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Overview</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#graphical-or-browser-software" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Graphical or Browser Software</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#licensed-software" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Licensed Software</span></a><ul class="isMobile astro-qyvkd5fr" style="--depth: 1;"><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#mathematica" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Mathematica</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#spss-statistics" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">SPSS Statistics</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#stata" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">STATA</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#ansys" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Ansys</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#gurobi" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Gurobi</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#matlab" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">MATLAB</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#star-ccm" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Star-CCM+</span></a></li></ul></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#cuda-related-modules" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">CUDA Related Modules</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#full-module-list" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Full Module List</span></a><ul class="isMobile astro-qyvkd5fr" style="--depth: 1;"><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#cpu-nodes" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">CPU Nodes</span></a></li></ul></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#software-survey-requests" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Software Survey Requests</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#post-software-survey-requests" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Post Software Survey Requests</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-ccg2zjtk"><div class="sl-container astro-ccg2zjtk"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-qyvkd5fr" style="--depth: 0;"><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#_top" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Overview</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#graphical-or-browser-software" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Graphical or Browser Software</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#licensed-software" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Licensed Software</span></a><ul class="astro-qyvkd5fr" style="--depth: 1;"><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#mathematica" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Mathematica</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#spss-statistics" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">SPSS Statistics</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#stata" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">STATA</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#ansys" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Ansys</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#gurobi" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Gurobi</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#matlab" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">MATLAB</span></a></li><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#star-ccm" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">Star-CCM+</span></a></li></ul></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#cuda-related-modules" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">CUDA Related Modules</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#full-module-list" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Full Module List</span></a><ul class="astro-qyvkd5fr" style="--depth: 1;"><li style="--depth: 1;" class="astro-qyvkd5fr"><a href="#cpu-nodes" style="--depth: 1;" class="astro-qyvkd5fr"><span style="--depth: 1;" class="astro-qyvkd5fr">CPU Nodes</span></a></li></ul></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#software-survey-requests" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Software Survey Requests</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#post-software-survey-requests" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Post Software Survey Requests</span></a></li></ul></nav></starlight-toc><script type="module" src="/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane astro-n673x4eg"><main data-pagefind-body class="astro-kwpuags7" lang="en-AU" dir="ltr"><div class="content-panel astro-4pq5mbqy"><div class="sl-container astro-4pq5mbqy"><h1 id="_top" class="astro-t5j6mvfy">Software status</h1></div></div><div class="content-panel astro-4pq5mbqy"><div class="sl-container astro-4pq5mbqy"><div class="sl-markdown-content"><div class="sl-heading-wrapper level-h1"><h1 id="status-of-major-software-installations">Status of Major Software Installations</h1><a class="sl-anchor-link" href="#status-of-major-software-installations"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Status of Major Software Installations”</span></a></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="graphical-or-browser-software">Graphical or Browser Software</h2><a class="sl-anchor-link" href="#graphical-or-browser-software"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Graphical or Browser Software”</span></a></div>
+<p>Please consult the  <a href="https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md">onBunya User Guide</a> to see which software is installed and how to run. RStudio, Jupyter Notebooks and Labs, Gaussview, Mathematica and many CVL apps are available through onBunya.</p>
+<div class="sl-heading-wrapper level-h2"><h2 id="licensed-software">Licensed Software</h2><a class="sl-anchor-link" href="#licensed-software"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Licensed Software”</span></a></div>
+<div class="sl-heading-wrapper level-h3"><h3 id="mathematica">Mathematica</h3><a class="sl-anchor-link" href="#mathematica"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Mathematica”</span></a></div>
+<p>[<strong>AVAILABLE</strong>]</p>
+<ul>
+<li>
+<p>Access is restricted to UQ users</p>
+</li>
+<li>
+<p>See <a href="https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md">onBunya User Guide</a></p>
+</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="spss-statistics">SPSS Statistics</h3><a class="sl-anchor-link" href="#spss-statistics"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “SPSS Statistics”</span></a></div>
+<ul>
+<li>
+<p>[<strong>AVAILABLE</strong>]</p>
+</li>
+<li>
+<p>Access is restrcited to UQ users</p>
+</li>
+</ul>
+<p>See <a href="https://github.com/UQ-RCC/hpc-docs/blob/main/guides/OnDemand-Guide.md">onBunya User Guide</a></p>
+<div class="sl-heading-wrapper level-h3"><h3 id="stata">STATA</h3><a class="sl-anchor-link" href="#stata"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “STATA”</span></a></div>
+<ul>
+<li>Cannot be provided on Bunya or on onBunya.</li>
+</ul>
+<div class="sl-heading-wrapper level-h3"><h3 id="ansys">Ansys</h3><a class="sl-anchor-link" href="#ansys"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Ansys”</span></a></div>
+<p>[<strong>AVAILABLE</strong>]</p>
+<ul>
+<li>
+<p>Access is restricted to approved UQ EAIT users only.</p>
+</li>
+<li>
+<p>The Ansys dependencies have been built and deployed as a single <em>mega-module</em>.</p>
+</li>
+<li>
+<p>The issue with the system coupling component now appears to have been resolved following a system configuration patch.</p>
+</li>
+</ul>
+<p>To load the dependencies and set the environment for using Ansys:</p>
+<p><strong><code dir="auto">module load ansys/2023.1</code></strong>
+or
+<strong><code dir="auto">module load ansys/2024.1</code></strong></p>
+<p><strong>Additional Notes</strong></p>
+<ul>
+<li>You must use the 2024.1 version to utilise the H100 GPUs (only relevant for operations that can utilise a GPU).</li>
+<li>Using Fluent across multiple servers requires that you override the default Intel-MPI behaviour of the software, and use the OpenMPI instead. The OpenMPI module is automatically loaded when you load the Ansys module, but you <em>must</em> ensure that the fluent command is invoked to use OpenMPI (instead of the default IntelMPI).</li>
+</ul>
+<p>Please submit a support request via email to <a href="mailto:rcc-support@uq.edu.au">rcc-support@uq.edu.au</a> if you experience any issues with Ansys.</p>
+<hr>
+<div class="sl-heading-wrapper level-h3"><h3 id="gurobi">Gurobi</h3><a class="sl-anchor-link" href="#gurobi"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Gurobi”</span></a></div>
+<p>[<strong>AVAILABLE</strong>]</p>
+<ul>
+<li>The issue with accessing the Gurobi product license servers on campus has been resolved.</li>
+<li>RCC is working with the vendor and ITS to faciliate access and use of the campus license server.</li>
+<li>Version 9.5.0 has been installed.</li>
+<li>Version 10.0.1 has been installed and configured.</li>
+<li>Awaiting a patch to the license server to be applied.</li>
+<li>The licensing patch has been applied.</li>
+<li>Version 11.0.3 has been deployed</li>
+<li>Version 13.0.0 is the (current) default version.</li>
+</ul>
+<div class="expressive-code"><link rel="stylesheet" href="/_astro/ec.w36nc.css"><script type="module" src="/_astro/ec.0vx5m.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">[uq_user@bunya2 ~]$ module purge</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">[uq_user@bunya2 ~]$ module load gurobi/11.0.3</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">[uq_user@bunya2 ~]$ alias | grep gurobi</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">alias check_gurobi_lic='/sw/local/rocky8.6/noarch/rcc/software/Gurobi/gurobi950/linux64/bin/gurobi_cl --license'</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">[uq_user@bunya2 ~]$ check_gurobi_lic</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Set parameter TokenServer to value "uq-gurobi.research.dc.uq.edu.au"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Set parameter LogFile to value "gurobi.log"</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">Using license file /sw/local/rocky8.6/noarch/rcc/software/Gurobi/gurobi.lic</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="[uq_user@bunya2 ~]$ module purge[uq_user@bunya2 ~]$ module load gurobi/11.0.3[uq_user@bunya2 ~]$ alias | grep gurobialias check_gurobi_lic=&#x27;/sw/local/rocky8.6/noarch/rcc/software/Gurobi/gurobi950/linux64/bin/gurobi_cl --license&#x27;[uq_user@bunya2 ~]$ check_gurobi_licSet parameter TokenServer to value &quot;uq-gurobi.research.dc.uq.edu.au&quot;Set parameter LogFile to value &quot;gurobi.log&quot;Using license file /sw/local/rocky8.6/noarch/rcc/software/Gurobi/gurobi.lic"><div></div></button></div></figure></div>
+<hr>
+<div class="sl-heading-wrapper level-h3"><h3 id="matlab">MATLAB</h3><a class="sl-anchor-link" href="#matlab"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “MATLAB”</span></a></div>
+<div class="sl-heading-wrapper level-h4"><h4 id="uq-users">UQ Users</h4><a class="sl-anchor-link" href="#uq-users"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “UQ Users”</span></a></div>
+<p>[<strong>AVAILABLE BUT UPDATES BEING TESTED</strong>]</p>
+<ul>
+<li>The version of MATLAB (2022a) that is available does not support some Simulink functionality.</li>
+<li>The Update 6 of R2022a is installed.</li>
+</ul>
+<p>Please test the updated version using</p>
+<p><strong><code dir="auto">module load matlab/R2022a6</code></strong></p>
+<div class="sl-heading-wrapper level-h4"><h4 id="non-uq">Non-UQ</h4><a class="sl-anchor-link" href="#non-uq"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Non-UQ”</span></a></div>
+<p>[<strong>UNAVAILABLE</strong>]</p>
+<ul>
+<li>The access to license servers at home institutions needs to be configured.</li>
+<li>Once that is established, software installation can occur.</li>
+</ul>
+<hr>
+<div class="sl-heading-wrapper level-h3"><h3 id="star-ccm">Star-CCM+</h3><a class="sl-anchor-link" href="#star-ccm"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Star-CCM+”</span></a></div>
+<p>[<strong>AVAILABLE FOR TESTING</strong>]</p>
+<ul>
+<li>Access to the UQ license server for this product has been established.</li>
+<li>Several dependencies have been deployed.</li>
+<li>Some command line options are essential. Please refer to <code dir="auto">module help starccm+/17.02.008</code></li>
+</ul>
+<p>To test functionality please either of these</p>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">module load star-ccm+/15.06.008</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">module load star-ccm+/17.02.008</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="module load star-ccm+/15.06.008module load star-ccm+/17.02.008"><div></div></button></div></figure></div>
+<p>Please submit a support request via email to <a href="mailto:rcc-support@uq.edu.au">rcc-support@uq.edu.au</a> if you experience any issues while testing Star-CCM+.</p>
+<hr>
+<div class="sl-heading-wrapper level-h2"><h2 id="cuda-related-modules">CUDA Related Modules</h2><a class="sl-anchor-link" href="#cuda-related-modules"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “CUDA Related Modules”</span></a></div>
+<p>The GPU nodes will have different modules available and users are advised to log onto a GPU node via an interactive session to see which modules are avialable for the specific GPU architectures. For example, CUDA modules will not be availalbe on CPU nodes, but will be available on the CUDA GPU nodes.<br>
+The command that will load the default version of the cuda drivers etc. on a GPU node will be <br>
+<code dir="auto">module load cuda</code><br>
+An alternative to using an interactive session on a CUDA node, would be to interrogate the <code dir="auto">/sw</code> filesystem for the versions of cuda that are available.<br>
+<code dir="auto">ls /sw/auto/rocky8*/*/modules/all/cuda/</code></p>
+<div class="sl-heading-wrapper level-h2"><h2 id="full-module-list">Full Module List</h2><a class="sl-anchor-link" href="#full-module-list"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Full Module List”</span></a></div>
+<div class="sl-heading-wrapper level-h3"><h3 id="cpu-nodes">CPU Nodes</h3><a class="sl-anchor-link" href="#cpu-nodes"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “CPU Nodes”</span></a></div>
+<p>You should run <strong><code dir="auto">module -I -w 120 --show-hidden overview</code></strong> on Bunya to get the up-to-date list of installed software.</p>
+<div class="expressive-code"><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">------------------------------------------ /sw/auto/rocky8c/epyc3/modules/all ------------------------------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">abricate           (1)   fastp                 (1)   impi            (3)   lz4           (2)   pybigwig        (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">alsa-lib           (1)   fastqc                (1)   intel-compilers (3)   lzo           (1)   pybind11        (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">anaconda3          (2)   fasttree              (1)   intel           (3)   m4            (5)   pycoqc          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ansys-dependencies (1)   fermi-lite            (1)   interproscan    (1)   maeparser     (2)   pysam           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ant                (2)   ffmpeg                (1)   intervaltree    (1)   mafft         (1)   python-isal     (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">any2fasta          (1)   ffnvcodec             (1)   intltool        (2)   make          (3)   python          (7)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">archive-zip        (1)   fftw.mpi              (2)   ipython         (2)   makeinfo      (1)   pyyaml          (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">archspec           (1)   fftw                  (3)   isa-l           (2)   mako          (2)   qhull           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">at-spi2-atk        (1)   file                  (2)   jags            (1)   mariadb       (1)   qiime2          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">at-spi2-core       (1)   filevercmp            (1)   jansson         (1)   mash          (1)   qt5             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">atk                (1)   flac                  (2)   jasper          (2)   matplotlib    (2)   quantumespresso (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">augustus           (2)   flex                  (7)   java            (1)   maxquant      (1)   quast           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">autoconf           (4)   flexiblas             (3)   jbigkit         (2)   megahit       (2)   r               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">automake           (4)   flye                  (1)   jellyfish       (2)   mesa          (2)   rapidjson       (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">autotools          (4)   fontconfig            (2)   jemalloc        (3)   meson         (2)   re2c            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bamtools           (2)   foss                  (3)   jsoncpp         (1)   metaeuk       (2)   rjags           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bbmap              (2)   freebayes             (1)   judy            (1)   metis         (2)   ruby            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bcftools           (2)   freetype              (2)   julia           (1)   miller        (1)   rust            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bcl2fastq2         (1)   fribidi               (2)   jupyter-server  (1)   miniconda3    (2)   salmon          (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">beagle-lib         (2)   fsom                  (1)   jupyterlab      (1)   minimap2      (1)   samtools        (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">beagle             (1)   gatk                  (1)   kallisto        (2)   mono          (1)   scafacos        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">beautifulsoup      (1)   gc                    (1)   kim-api         (1)   motif         (1)   scalapack       (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bedtools           (2)   gcc                   (3)   kraken2         (2)   mpfr          (2)   scikit-build    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">binutils           (6)   gcccore               (3)   kronatools      (1)   mrbayes       (2)   scipy-bundle    (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bio-db-hts         (1)   gcta                  (1)   lame            (2)   mrtrix        (1)   sdl2            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bio-searchio-hmmer (2)   gdal                  (2)   lammps          (1)   multichoose   (1)   sepp            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bioperl            (2)   gdk-pixbuf            (1)   lapack          (1)   multiqc       (2)   seqlib          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">biopython          (2)   geos                  (2)   libaio          (1)   mummer        (2)   seqtk           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bison              (4)   gettext               (4)   libarchive      (3)   nasm          (2)   smithwaterman   (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blast+             (2)   gfbf                  (1)   libcerf         (2)   ncbi-vdb      (2)   snakemake       (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blast              (1)   gffcompare            (1)   libdeflate      (1)   ncurses       (6)   snappy          (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blat               (1)   gffread               (1)   libdrm          (2)   netcdf        (2)   spaceranger     (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blis               (3)   ghostscript           (2)   libepoxy        (1)   nettle        (2)   spades          (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">boost.python       (2)   giflib                (1)   libev           (1)   networkx      (2)   spectra         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">boost              (2)   git                   (2)   libevent        (3)   nextflow      (2)   sqlite          (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bowtie             (1)   gitpython             (2)   libfabric       (3)   nghttp2       (1)   sra-toolkit     (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bowtie2            (2)   glib-networking       (1)   libffi          (3)   nghttp3       (1)   ssw             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">brotli             (2)   glib                  (2)   libgd           (2)   ngs           (1)   star            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">busco              (2)   glpk                  (2)   libgeotiff      (2)   ngtcp2        (1)   stringtie       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bwa                (2)   gmap-gsnap            (1)   libgit2         (2)   ninja         (2)   suitesparse     (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bzip2              (3)   gmp                   (2)   libglu          (4)   nlohmann_json (1)   swig            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">c-ares             (1)   gnuplot               (2)   libglvnd        (2)   nlopt         (2)   szip            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cairo              (2)   gnutls                (1)   libiconv        (2)   nodejs        (2)   tabixpp         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">canu               (2)   go                    (3)   libidn          (2)   nspr          (2)   tbb             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">capnproto          (1)   gobject-introspection (2)   libidn2         (2)   nss           (2)   tbl2asn         (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cd-hit             (2)   gompi                 (3)   libint          (2)   numactl       (3)   tcl             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellranger-arc     (1)   googletest            (1)   libjpeg-turbo   (2)   openbabel     (2)   tk              (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellranger         (1)   gperf                 (2)   libnsl          (1)   openblas      (3)   tkinter         (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cereal             (1)   graphite2             (1)   libogg          (2)   openjpeg      (1)   tqdm            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">checkm-database    (1)   groff                 (2)   libopus         (1)   openmpi       (3)   trimmomatic     (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">checkm             (2)   gromacs               (1)   libpciaccess    (3)   openpgm       (2)   trinity         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">clang              (3)   gsl                   (2)   libpng          (2)   openssl       (1)   ucc             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cmake              (5)   gtdb-tk               (1)   libpsl          (1)   p11-kit       (1)   ucx             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">compress-raw-zlib  (1)   gtk2                  (1)   libreadline     (3)   pandoc        (1)   udunits         (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">coordgenlibs       (2)   gtk3                  (1)   libsndfile      (2)   pango         (2)   unzip           (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cp2k               (2)   guile                 (1)   libsodium       (2)   parallel      (2)   util-linux      (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cppy               (2)   gzip                  (2)   libsoup         (1)   pcre          (2)   vcflib          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cunit              (1)   h5py                  (1)   libtasn1        (1)   pcre2         (2)   vcftools        (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">curl               (3)   harfbuzz              (2)   libtiff         (2)   perl          (5)   vep             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cutadapt           (2)   hdf                   (2)   libtirpc        (2)   picard        (1)   voro++          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">db                 (2)   hdf5                  (2)   libtool         (4)   pigz          (2)   wget            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">db_file            (2)   help2man              (3)   libunistring    (1)   pillow        (2)   x11             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dbd-mysql          (1)   hifiasm               (1)   libunwind       (2)   pixman        (2)   x264            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dbus               (2)   hipsycl               (1)   libvorbis       (2)   pkg-config    (2)   x265            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">deeptools          (2)   hisat2                (2)   libwebp         (1)   pkgconf       (3)   xml-libxml      (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dendropy           (2)   hmmer                 (2)   libxc           (2)   pkgconfig     (1)   xorg-macros     (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">diamond            (2)   htseq                 (1)   libxml2         (5)   plink         (1)   xvfb            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">double-conversion  (2)   htslib                (2)   libxslt         (1)   plotly.py     (2)   xxd             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">doxygen            (2)   humann                (1)   libxsmm         (2)   plumed        (2)   xz              (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">easybuild          (2)   hwloc                 (3)   libyaml         (2)   pmix          (3)   yasm            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">eigen              (2)   hypothesis            (2)   littlecms       (2)   pocl          (1)   z3              (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">elfutils           (2)   icu                   (2)   llvm            (2)   popt          (1)   zeromq          (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">elpa               (2)   iimpi                 (3)   lmdb            (3)   pplacer       (1)   zip             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">expat              (2)   imagemagick           (2)   lpsolve         (2)   prodigal      (2)   zlib            (6)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fastahack          (1)   imkl-fftw             (2)   lua             (2)   proj          (2)   zstd            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fastani            (1)   imkl                  (3)   lxml            (1)   prokka        (2)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">------------------------------------------ /sw/local/rocky8/epyc3/rcc/modules ------------------------------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bolt-lmm (1)   eagleimp (1)   lisflood-fp (3)   vasp (4)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">----------------------------------------- /sw/local/rocky8/noarch/rcc/modules ------------------------------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ansys     (1)   crisflash (1)   huygens        (2)   mathematica (1)   qctool  (1)   star-ccm+ (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">asreml-as (1)   gaussian  (1)   ilastik        (1)   matlab      (1)   relion  (3)   wombat    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">basespace (1)   gurobi    (2)   localcolabfold (1)   orca        (1)   rstudio (1)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">----------------------------------------- /sw/local/rocky8/noarch/qcif/modules -----------------------------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">3d-dna              (1)   f5c          (1)   macs2         (1)   pear            (1)   shpc         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">biobakery_workflows (1)   fastool      (1)   maker         (1)   qapa            (1)   singlem      (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blast               (1)   gcta         (1)   medaka        (1)   qiime2-amplicon (1)   snap         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">braker3             (1)   gff3sort     (1)   mikado        (1)   qiime2-shotgun  (1)   sortmerna    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellbender          (1)   gmap         (1)   mira          (1)   racon           (1)   sqanti3      (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">celseq2             (1)   gtdbtk       (1)   mixer         (1)   ratatosk        (1)   sra-tools    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">circlator           (1)   harvesttools (1)   mlst          (1)   raxml           (1)   srst2        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dadi                (1)   hisat2       (1)   mtag          (1)   regenie         (1)   star         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dfam                (1)   ipyrad       (2)   nanocompore   (1)   repeatmasker    (1)   suppa        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">diamond             (1)   iqtree       (1)   nanopolish    (1)   repeatmodeler   (1)   transdecoder (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dram                (1)   isoseq3      (1)   nextpolish    (1)   rmats-turbo     (1)   trinity      (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">drep                (1)   juicer       (1)   nextpolish2   (1)   rsem            (1)   trinotate    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">edirect             (1)   kallisto     (1)   ont-fast5-api (1)   salsa2          (1)   unicycler    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">enrichm             (1)   kofamscan    (1)   parsnp        (1)   scvelo          (1)   xpore        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">exonerate           (1)   ldsc         (1)   pb-assembly   (1)   shovill         (1)</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="------------------------------------------ /sw/auto/rocky8c/epyc3/modules/all ------------------------------------------abricate           (1)   fastp                 (1)   impi            (3)   lz4           (2)   pybigwig        (2)alsa-lib           (1)   fastqc                (1)   intel-compilers (3)   lzo           (1)   pybind11        (2)anaconda3          (2)   fasttree              (1)   intel           (3)   m4            (5)   pycoqc          (1)ansys-dependencies (1)   fermi-lite            (1)   interproscan    (1)   maeparser     (2)   pysam           (2)ant                (2)   ffmpeg                (1)   intervaltree    (1)   mafft         (1)   python-isal     (2)any2fasta          (1)   ffnvcodec             (1)   intltool        (2)   make          (3)   python          (7)archive-zip        (1)   fftw.mpi              (2)   ipython         (2)   makeinfo      (1)   pyyaml          (2)archspec           (1)   fftw                  (3)   isa-l           (2)   mako          (2)   qhull           (2)at-spi2-atk        (1)   file                  (2)   jags            (1)   mariadb       (1)   qiime2          (1)at-spi2-core       (1)   filevercmp            (1)   jansson         (1)   mash          (1)   qt5             (2)atk                (1)   flac                  (2)   jasper          (2)   matplotlib    (2)   quantumespresso (2)augustus           (2)   flex                  (7)   java            (1)   maxquant      (1)   quast           (2)autoconf           (4)   flexiblas             (3)   jbigkit         (2)   megahit       (2)   r               (3)automake           (4)   flye                  (1)   jellyfish       (2)   mesa          (2)   rapidjson       (2)autotools          (4)   fontconfig            (2)   jemalloc        (3)   meson         (2)   re2c            (2)bamtools           (2)   foss                  (3)   jsoncpp         (1)   metaeuk       (2)   rjags           (1)bbmap              (2)   freebayes             (1)   judy            (1)   metis         (2)   ruby            (2)bcftools           (2)   freetype              (2)   julia           (1)   miller        (1)   rust            (2)bcl2fastq2         (1)   fribidi               (2)   jupyter-server  (1)   miniconda3    (2)   salmon          (2)beagle-lib         (2)   fsom                  (1)   jupyterlab      (1)   minimap2      (1)   samtools        (3)beagle             (1)   gatk                  (1)   kallisto        (2)   mono          (1)   scafacos        (1)beautifulsoup      (1)   gc                    (1)   kim-api         (1)   motif         (1)   scalapack       (3)bedtools           (2)   gcc                   (3)   kraken2         (2)   mpfr          (2)   scikit-build    (1)binutils           (6)   gcccore               (3)   kronatools      (1)   mrbayes       (2)   scipy-bundle    (2)bio-db-hts         (1)   gcta                  (1)   lame            (2)   mrtrix        (1)   sdl2            (1)bio-searchio-hmmer (2)   gdal                  (2)   lammps          (1)   multichoose   (1)   sepp            (2)bioperl            (2)   gdk-pixbuf            (1)   lapack          (1)   multiqc       (2)   seqlib          (1)biopython          (2)   geos                  (2)   libaio          (1)   mummer        (2)   seqtk           (2)bison              (4)   gettext               (4)   libarchive      (3)   nasm          (2)   smithwaterman   (1)blast+             (2)   gfbf                  (1)   libcerf         (2)   ncbi-vdb      (2)   snakemake       (2)blast              (1)   gffcompare            (1)   libdeflate      (1)   ncurses       (6)   snappy          (2)blat               (1)   gffread               (1)   libdrm          (2)   netcdf        (2)   spaceranger     (1)blis               (3)   ghostscript           (2)   libepoxy        (1)   nettle        (2)   spades          (2)boost.python       (2)   giflib                (1)   libev           (1)   networkx      (2)   spectra         (1)boost              (2)   git                   (2)   libevent        (3)   nextflow      (2)   sqlite          (3)bowtie             (1)   gitpython             (2)   libfabric       (3)   nghttp2       (1)   sra-toolkit     (1)bowtie2            (2)   glib-networking       (1)   libffi          (3)   nghttp3       (1)   ssw             (1)brotli             (2)   glib                  (2)   libgd           (2)   ngs           (1)   star            (2)busco              (2)   glpk                  (2)   libgeotiff      (2)   ngtcp2        (1)   stringtie       (1)bwa                (2)   gmap-gsnap            (1)   libgit2         (2)   ninja         (2)   suitesparse     (2)bzip2              (3)   gmp                   (2)   libglu          (4)   nlohmann_json (1)   swig            (2)c-ares             (1)   gnuplot               (2)   libglvnd        (2)   nlopt         (2)   szip            (2)cairo              (2)   gnutls                (1)   libiconv        (2)   nodejs        (2)   tabixpp         (1)canu               (2)   go                    (3)   libidn          (2)   nspr          (2)   tbb             (2)capnproto          (1)   gobject-introspection (2)   libidn2         (2)   nss           (2)   tbl2asn         (2)cd-hit             (2)   gompi                 (3)   libint          (2)   numactl       (3)   tcl             (3)cellranger-arc     (1)   googletest            (1)   libjpeg-turbo   (2)   openbabel     (2)   tk              (2)cellranger         (1)   gperf                 (2)   libnsl          (1)   openblas      (3)   tkinter         (2)cereal             (1)   graphite2             (1)   libogg          (2)   openjpeg      (1)   tqdm            (1)checkm-database    (1)   groff                 (2)   libopus         (1)   openmpi       (3)   trimmomatic     (1)checkm             (2)   gromacs               (1)   libpciaccess    (3)   openpgm       (2)   trinity         (1)clang              (3)   gsl                   (2)   libpng          (2)   openssl       (1)   ucc             (2)cmake              (5)   gtdb-tk               (1)   libpsl          (1)   p11-kit       (1)   ucx             (3)compress-raw-zlib  (1)   gtk2                  (1)   libreadline     (3)   pandoc        (1)   udunits         (2)coordgenlibs       (2)   gtk3                  (1)   libsndfile      (2)   pango         (2)   unzip           (3)cp2k               (2)   guile                 (1)   libsodium       (2)   parallel      (2)   util-linux      (2)cppy               (2)   gzip                  (2)   libsoup         (1)   pcre          (2)   vcflib          (1)cunit              (1)   h5py                  (1)   libtasn1        (1)   pcre2         (2)   vcftools        (2)curl               (3)   harfbuzz              (2)   libtiff         (2)   perl          (5)   vep             (1)cutadapt           (2)   hdf                   (2)   libtirpc        (2)   picard        (1)   voro++          (1)db                 (2)   hdf5                  (2)   libtool         (4)   pigz          (2)   wget            (2)db_file            (2)   help2man              (3)   libunistring    (1)   pillow        (2)   x11             (2)dbd-mysql          (1)   hifiasm               (1)   libunwind       (2)   pixman        (2)   x264            (1)dbus               (2)   hipsycl               (1)   libvorbis       (2)   pkg-config    (2)   x265            (1)deeptools          (2)   hisat2                (2)   libwebp         (1)   pkgconf       (3)   xml-libxml      (2)dendropy           (2)   hmmer                 (2)   libxc           (2)   pkgconfig     (1)   xorg-macros     (3)diamond            (2)   htseq                 (1)   libxml2         (5)   plink         (1)   xvfb            (2)double-conversion  (2)   htslib                (2)   libxslt         (1)   plotly.py     (2)   xxd             (2)doxygen            (2)   humann                (1)   libxsmm         (2)   plumed        (2)   xz              (3)easybuild          (2)   hwloc                 (3)   libyaml         (2)   pmix          (3)   yasm            (1)eigen              (2)   hypothesis            (2)   littlecms       (2)   pocl          (1)   z3              (2)elfutils           (2)   icu                   (2)   llvm            (2)   popt          (1)   zeromq          (2)elpa               (2)   iimpi                 (3)   lmdb            (3)   pplacer       (1)   zip             (1)expat              (2)   imagemagick           (2)   lpsolve         (2)   prodigal      (2)   zlib            (6)fastahack          (1)   imkl-fftw             (2)   lua             (2)   proj          (2)   zstd            (2)fastani            (1)   imkl                  (3)   lxml            (1)   prokka        (2)------------------------------------------ /sw/local/rocky8/epyc3/rcc/modules ------------------------------------------bolt-lmm (1)   eagleimp (1)   lisflood-fp (3)   vasp (4)----------------------------------------- /sw/local/rocky8/noarch/rcc/modules ------------------------------------------ansys     (1)   crisflash (1)   huygens        (2)   mathematica (1)   qctool  (1)   star-ccm+ (2)asreml-as (1)   gaussian  (1)   ilastik        (1)   matlab      (1)   relion  (3)   wombat    (1)basespace (1)   gurobi    (2)   localcolabfold (1)   orca        (1)   rstudio (1)----------------------------------------- /sw/local/rocky8/noarch/qcif/modules -----------------------------------------3d-dna              (1)   f5c          (1)   macs2         (1)   pear            (1)   shpc         (1)biobakery_workflows (1)   fastool      (1)   maker         (1)   qapa            (1)   singlem      (1)blast               (1)   gcta         (1)   medaka        (1)   qiime2-amplicon (1)   snap         (1)braker3             (1)   gff3sort     (1)   mikado        (1)   qiime2-shotgun  (1)   sortmerna    (1)cellbender          (1)   gmap         (1)   mira          (1)   racon           (1)   sqanti3      (1)celseq2             (1)   gtdbtk       (1)   mixer         (1)   ratatosk        (1)   sra-tools    (1)circlator           (1)   harvesttools (1)   mlst          (1)   raxml           (1)   srst2        (1)dadi                (1)   hisat2       (1)   mtag          (1)   regenie         (1)   star         (1)dfam                (1)   ipyrad       (2)   nanocompore   (1)   repeatmasker    (1)   suppa        (1)diamond             (1)   iqtree       (1)   nanopolish    (1)   repeatmodeler   (1)   transdecoder (1)dram                (1)   isoseq3      (1)   nextpolish    (1)   rmats-turbo     (1)   trinity      (1)drep                (1)   juicer       (1)   nextpolish2   (1)   rsem            (1)   trinotate    (1)edirect             (1)   kallisto     (1)   ont-fast5-api (1)   salsa2          (1)   unicycler    (1)enrichm             (1)   kofamscan    (1)   parsnp        (1)   scvelo          (1)   xpore        (1)exonerate           (1)   ldsc         (1)   pb-assembly   (1)   shovill         (1)"><div></div></button></div></figure></div>
+<hr>
+<div class="sl-heading-wrapper level-h2"><h2 id="software-survey-requests">Software Survey Requests</h2><a class="sl-anchor-link" href="#software-survey-requests"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Software Survey Requests”</span></a></div>
+<p>In late 2022, we asked users to participate in the software survey to ascertain which tools were required on Bunya.
+The following table summarises the status of those requests.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Name</th>
+<th style="text-align: center">Requests</th>
+<th style="text-align: center">Responsible</th>
+<th style="text-align: left">Completed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">Anaconda</td>
+<td style="text-align: center">96</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">R</td>
+<td style="text-align: center">95</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">GNU compilers (gcc and gfortran)</td>
+<td style="text-align: center">74</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">bedtools</td>
+<td style="text-align: center">56</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">bamtools</td>
+<td style="text-align: center">53</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">fastqc</td>
+<td style="text-align: center">53</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">samtools</td>
+<td style="text-align: center">50</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Singularity</td>
+<td style="text-align: center">49</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">bcftools</td>
+<td style="text-align: center">47</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">OpenMPI (Intel and/or GNU)</td>
+<td style="text-align: center">46</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">blast2</td>
+<td style="text-align: center">45</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">bowtie2</td>
+<td style="text-align: center">43</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Matlab</td>
+<td style="text-align: center">41</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">trimmomatic</td>
+<td style="text-align: center">36</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Intel Compilers (icc and ifort)</td>
+<td style="text-align: center">29</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">curl</td>
+<td style="text-align: center">29</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">gatk4</td>
+<td style="text-align: center">27</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">BLAS</td>
+<td style="text-align: center">26</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">IntelMPI</td>
+<td style="text-align: center">26</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">gcta</td>
+<td style="text-align: center">25</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">LAPACK</td>
+<td style="text-align: center">24</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">cutadapt</td>
+<td style="text-align: center">24</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">STAR</td>
+<td style="text-align: center">24</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">fastp</td>
+<td style="text-align: center">23</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">hisat2</td>
+<td style="text-align: center">22</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">hmmer</td>
+<td style="text-align: center">22</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Julia</td>
+<td style="text-align: center">20</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Gaussian</td>
+<td style="text-align: center">20</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">busco</td>
+<td style="text-align: center">20</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">picard</td>
+<td style="text-align: center">20</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">trinity</td>
+<td style="text-align: center">20</td>
+<td style="text-align: center">QCIF/RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">beagle</td>
+<td style="text-align: center">19</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">htseq</td>
+<td style="text-align: center">18</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">seqtk</td>
+<td style="text-align: center">18</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">sra-tools</td>
+<td style="text-align: center">18</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">augustus</td>
+<td style="text-align: center">17</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">cellRanger</td>
+<td style="text-align: center">16</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">multiQC</td>
+<td style="text-align: center">16</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">OpenJDK</td>
+<td style="text-align: center">15</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">canu</td>
+<td style="text-align: center">15</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">jellyfish</td>
+<td style="text-align: center">15</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">RepeatMasker</td>
+<td style="text-align: center">15</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">deeptools</td>
+<td style="text-align: center">14</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Gromacs</td>
+<td style="text-align: center">13</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">cd-hit</td>
+<td style="text-align: center">13</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">guppy</td>
+<td style="text-align: center">13</td>
+<td style="text-align: center">User</td>
+<td style="text-align: left">YES … User must install personally licensed copy</td>
+</tr>
+<tr>
+<td style="text-align: left">qiime2</td>
+<td style="text-align: center">13</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">transdecoder</td>
+<td style="text-align: center">13</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">Orca</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">LAMMPS</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">gffcompare</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">hclust2</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">kallisto</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">pacbio</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">RCC/QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">snakemake</td>
+<td style="text-align: center">12</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">flye</td>
+<td style="text-align: center">11</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">interproscan</td>
+<td style="text-align: center">11</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">macs2</td>
+<td style="text-align: center">11</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">spades</td>
+<td style="text-align: center">11</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">trinotate</td>
+<td style="text-align: center">11</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">VASP</td>
+<td style="text-align: center">10</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">diamond</td>
+<td style="text-align: center">10</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">gmap</td>
+<td style="text-align: center">10</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">prokka</td>
+<td style="text-align: center">10</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">Has been reinstalled due to a dependency issue</td>
+</tr>
+<tr>
+<td style="text-align: left">braker2</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES but has issues ?</td>
+</tr>
+<tr>
+<td style="text-align: left">checkm</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">htslib</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">kraken2</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">mafft</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">maker</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">nextflow</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">quast</td>
+<td style="text-align: center">9</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">pb-assembly</td>
+<td style="text-align: center">8</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">repeatmodeler</td>
+<td style="text-align: center">8</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">plink (inc plink 1.9)</td>
+<td style="text-align: center">8</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">exonerate</td>
+<td style="text-align: center">7</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">iqtree</td>
+<td style="text-align: center">7</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">VEP</td>
+<td style="text-align: center">7</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">ATLAS</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">Nimrod</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">krona</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">mauve</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">NextPolish</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">SNAP</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">StarCCM</td>
+<td style="text-align: center">6</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">NEARLY</td>
+</tr>
+<tr>
+<td style="text-align: left">circlator</td>
+<td style="text-align: center">5</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">isoseq3</td>
+<td style="text-align: center">5</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">3d-dna</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">edirect</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">raxml</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">cp2k</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">eilmer4</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">User</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">plink2</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">neurodesk</td>
+<td style="text-align: center">4</td>
+<td style="text-align: center">User</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">abricate</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">celseq2</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">dfam</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">metaphlan</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">mlst</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">salsa</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">spaceRanger</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">pytorch/tensorflow/cuda</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">gtdb-tk</td>
+<td style="text-align: center">3</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">juicer</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">maxquant</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">mira</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">pear</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">cmake</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">ansys</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">gurobi</td>
+<td style="text-align: center">2</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">AOCC</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">besst</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">dammit</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">NextDenovo</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">picrust2</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">rcorrector</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center"></td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">shovill</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">go (golang)</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">intel mkl</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">parallel</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">vcftools</td>
+<td style="text-align: center">1</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">mikado</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">proovread</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">ratatosk</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">sortmerna</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">humann</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+<tr>
+<td style="text-align: left">srst2</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">QCIF</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">rust</td>
+<td style="text-align: center">0</td>
+<td style="text-align: center">RCC</td>
+<td style="text-align: left">YES</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<div class="sl-heading-wrapper level-h2"><h2 id="post-software-survey-requests">Post Software Survey Requests</h2><a class="sl-anchor-link" href="#post-software-survey-requests"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Post Software Survey Requests”</span></a></div>
+<p>These are requests that were not included in the software survey and have been requested since that time. They are necessarily lower priority.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Name</th>
+<th style="text-align: center">Requested</th>
+<th style="text-align: center">Ready?</th>
+<th style="text-align: left">Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">DIA-NN</td>
+<td style="text-align: center">202303</td>
+<td style="text-align: center">NO</td>
+<td style="text-align: left">Suitable download found. User is testing</td>
+</tr>
+<tr>
+<td style="text-align: left">Vienna RNA</td>
+<td style="text-align: center">202303</td>
+<td style="text-align: center">NO</td>
+<td style="text-align: left">Installation via EB mechanism yet to be done after initial attempts failed.</td>
+</tr>
+<tr>
+<td style="text-align: left">Mr Bayes</td>
+<td style="text-align: center">202303</td>
+<td style="text-align: center">YES</td>
+<td style="text-align: left">Installation by modified EB script mechanism successful. Submitting for deployment. Deployed!</td>
+</tr>
+<tr>
+<td style="text-align: left">VBZ Compression Tool</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">NO</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">FoldX, Rosetta and RFdiffusion</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">NO</td>
+<td style="text-align: left"></td>
+</tr>
+<tr>
+<td style="text-align: left">LESYMAP</td>
+<td style="text-align: center">2023-06-01</td>
+<td style="text-align: center">YES</td>
+<td style="text-align: left">HackyHour. Identified suitable docker image to use with Apptainer on Bunya.</td>
+</tr>
+<tr>
+<td style="text-align: left">REEF3D</td>
+<td style="text-align: center"></td>
+<td style="text-align: center">NO</td>
+<td style="text-align: left">Was installed on Tinaroo previously. User to install with RCC guidance.</td>
+</tr>
+</tbody>
+</table>
+</div><footer class="sl-flex astro-77pjwswi"><div class="meta sl-flex astro-77pjwswi"><a href="https://github.com/UQ-RCC/platform-docs/edit/main/sites/hpc/src/content/docs/old/Software-Status.md" class="sl-flex print:hidden astro-jkdjgyns"><svg aria-hidden="true" class="astro-jkdjgyns astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg>Edit page</a></div><div class="pagination-links print:hidden astro-hrymgie4" dir="ltr"></div></footer></div></div></main></div></div></div></div></body></html>

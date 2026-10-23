@@ -1,0 +1,755 @@
+<!DOCTYPE html><html lang="en-AU" dir="ltr" data-theme="dark" data-has-toc data-has-sidebar class="astro-kwpuags7"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/><title>List of Software on Bunya | UQ RCC HPC</title><link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml"/><meta name="generator" content="Astro v7.4.1"/><meta name="generator" content="Starlight v0.42.6"/><meta property="og:title" content="List of Software on Bunya"/><meta property="og:type" content="article"/><meta property="og:locale" content="en-AU"/><meta property="og:site_name" content="UQ RCC HPC"/><meta name="twitter:card" content="summary_large_image"/><meta name="theme-color" content="#51247A"/><script>
+	window.StarlightThemeProvider = (() => {
+		const storedTheme =
+			typeof localStorage !== 'undefined' && localStorage.getItem('starlight-theme');
+		const theme =
+			storedTheme ||
+			(window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+		document.documentElement.dataset.theme = theme === 'light' ? 'light' : 'dark';
+		return {
+			updatePickers(theme = storedTheme || 'auto') {
+				document.querySelectorAll('starlight-theme-select').forEach((picker) => {
+					const select = picker.querySelector('select');
+					if (select) select.value = theme;
+					/** @type {HTMLTemplateElement | null} */
+					const tmpl = document.querySelector(`#theme-icons`);
+					const newIcon = tmpl && tmpl.content.querySelector('.' + theme);
+					if (newIcon) {
+						const oldIcon = picker.querySelector('svg.label-icon');
+						if (oldIcon) {
+							oldIcon.replaceChildren(...newIcon.cloneNode(true).childNodes);
+						}
+					}
+				});
+			},
+		};
+	})();
+</script><template id="theme-icons"><svg aria-hidden="true" class="light astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg><svg aria-hidden="true" class="auto astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg></template><link rel="stylesheet" href="/_astro/print.ehPL0gv-.css" media="print"><link rel="stylesheet" href="/_astro/common.D58dWdyi.css"><script type="module" src="/_astro/page.cNngjUgL.js"></script></head><body class="astro-kwpuags7"><a class="sl-skip-link astro-q6oz67g2" href="#_top">Skip to content</a><div class="page sl-flex astro-y3nufrqf"><header class="header astro-y3nufrqf"><div class="header astro-35hq3lwv"><div class="title-wrapper sl-flex astro-35hq3lwv"><a href="/" class="site-title sl-flex astro-x5yupnqu"><span class="astro-x5yupnqu" translate="no">UQ RCC HPC</span></a></div><div class="sl-flex print:hidden astro-35hq3lwv"><site-search class="astro-35hq3lwv astro-2fpsbkhe" data-translations="{&quot;placeholder&quot;:&quot;Search&quot;}"><button data-open-modal disabled aria-label="Search" aria-keyshortcuts="Control+K" class="astro-2fpsbkhe"><svg aria-hidden="true" class="astro-2fpsbkhe astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21.71 20.29 18 16.61A9 9 0 1 0 16.61 18l3.68 3.68a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.39ZM11 18a7 7 0 1 1 0-14 7 7 0 0 1 0 14Z"/></svg><span class="sl-hidden md:sl-block astro-2fpsbkhe" aria-hidden="true">Search</span><kbd class="sl-hidden md:sl-flex astro-2fpsbkhe" style="display: none;"><kbd class="astro-2fpsbkhe">Ctrl</kbd><kbd class="astro-2fpsbkhe">K</kbd></kbd></button><dialog style="padding:0" aria-label="Search" class="astro-2fpsbkhe"><div class="dialog-frame sl-flex astro-2fpsbkhe"><button data-close-modal class="sl-flex md:sl-hidden astro-2fpsbkhe">Cancel</button><div class="search-container astro-2fpsbkhe"><div id="starlight__search" class="astro-2fpsbkhe"></div></div></div></dialog></site-search><script>
+	(() => {
+		const openBtn = document.querySelector('button[data-open-modal]');
+		const shortcut = openBtn?.querySelector('kbd');
+		if (!openBtn || !(shortcut instanceof HTMLElement)) return;
+		const platformKey = shortcut.querySelector('kbd');
+		if (platformKey && /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform)) {
+			platformKey.textContent = '⌘';
+			openBtn.setAttribute('aria-keyshortcuts', 'Meta+K');
+		}
+		shortcut.style.display = '';
+	})();
+</script><script type="module" src="/_astro/Search.astro_astro_type_script_index_0_lang.g9hoxVJg.js"></script></div><div class="sl-hidden md:sl-flex print:hidden right-group astro-35hq3lwv"><div class="sl-flex social-icons astro-35hq3lwv"></div><theme-toggle class="astro-vzsv7p5z"><button type="button" aria-label="Toggle colour theme" class="astro-vzsv7p5z"><svg aria-hidden="true" class="auto astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><svg aria-hidden="true" class="light astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg></button></theme-toggle><script type="module">var e=`starlight-theme`,t=[`auto`,`light`,`dark`],n={auto:`Auto`,light:`Light`,dark:`Dark`},r=e=>e===`auto`||e===`dark`||e===`light`?e:`auto`,i=()=>r(typeof localStorage<`u`&&localStorage.getItem(e));function a(t){typeof localStorage<`u`&&localStorage.setItem(e,t===`light`||t===`dark`?t:``)}var o=()=>matchMedia(`(prefers-color-scheme: light)`).matches?`light`:`dark`;function s(e){document.documentElement.dataset.theme=e===`auto`?o():e,a(e),document.querySelectorAll(`theme-toggle`).forEach(t=>{t.dataset.themePref=e;let r=t.querySelector(`button`);r&&(r.title=`Theme: ${n[e]}`,r.setAttribute(`aria-label`,`Theme: ${n[e]}. Click to change.`))}),window.StarlightThemeProvider&&window.StarlightThemeProvider.updatePickers(e)}matchMedia(`(prefers-color-scheme: light)`).addEventListener(`change`,()=>{i()===`auto`&&s(`auto`)});var c=class extends HTMLElement{connectedCallback(){this.dataset.initialised!==`true`&&(this.dataset.initialised=`true`,s(i()),this.querySelector(`button`)?.addEventListener(`click`,()=>{let e=t[(t.indexOf(i())+1)%t.length];s(e)}))}};customElements.define(`theme-toggle`,c);</script><script type="module">var e=class extends HTMLElement{constructor(){super();let e=this.querySelector(`select`);e&&(e.addEventListener(`change`,e=>{e.currentTarget instanceof HTMLSelectElement&&(window.location.pathname=e.currentTarget.value)}),window.addEventListener(`pageshow`,t=>{if(!t.persisted)return;let n=e.querySelector(`option[selected]`)?.index;n!==e.selectedIndex&&(e.selectedIndex=n??0)}))}};customElements.define(`starlight-lang-select`,e);</script></div></div></header><nav class="sidebar print:hidden astro-y3nufrqf" aria-label="Main"><button popovertarget="starlight__sidebar" class="sl-menu-button sl-flex md:sl-hidden print:hidden astro-tfmpqdix"><svg aria-hidden="true" class="open-menu astro-tfmpqdix astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M3 8h18a1 1 0 1 0 0-2H3a1 1 0 0 0 0 2Zm18 8H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Zm0-5H3a1 1 0 0 0 0 2h18a1 1 0 0 0 0-2Z"/></svg><svg aria-hidden="true" class="close-menu astro-tfmpqdix astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="m13.41 12 6.3-6.29a1.004 1.004 0 1 0-1.42-1.42L12 10.59l-6.29-6.3a1.004 1.004 0 0 0-1.42 1.42l6.3 6.29-6.3 6.29a1 1 0 0 0 0 1.42.998.998 0 0 0 1.42 0l6.29-6.3 6.29 6.3a.999.999 0 0 0 1.42 0 1 1 0 0 0 0-1.42L13.41 12Z"/></svg><span class="sr-only astro-tfmpqdix">Menu</span></button><script type="module">var e=class extends HTMLElement{constructor(){super();let e=matchMedia(`(min-width: 50em)`),t=()=>{this.popover=e.matches?null:`auto`};t(),e.addEventListener(`change`,()=>t()),this.addEventListener(`toggle`,({newState:e})=>this.trapFocus(e===`open`))}trapFocus(e){document.querySelectorAll(`.main-frame, .sl-skip-link`).forEach(t=>{t.toggleAttribute(`inert`,e)})}};customElements.define(`sl-sidebar-pane`,e);</script><sl-sidebar-pane popover id="starlight__sidebar" class="sidebar-pane astro-y3nufrqf"><div class="sidebar-content sl-flex astro-y3nufrqf"><sl-sidebar-state-persist data-hash="1eyem37" class="astro-m35hxcwh"><script aria-hidden="true">
+		(() => {
+			try {
+				if (!matchMedia('(min-width: 50em)').matches) return;
+				/** @type {HTMLElement | null} */
+				const target = document.querySelector('sl-sidebar-state-persist');
+				const state = JSON.parse(sessionStorage.getItem('sl-sidebar-state') || '0');
+				if (!target || !state || target.dataset.hash !== state.hash) return;
+				window._starlightScrollRestore = state.scroll;
+				customElements.define(
+					'sl-sidebar-restore',
+					class SidebarRestore extends HTMLElement {
+						connectedCallback() {
+							try {
+								const idx = parseInt(this.dataset.index || '');
+								const details = this.closest('details');
+								if (details && typeof state.open[idx] === 'boolean') details.open = state.open[idx];
+							} catch {}
+						}
+					}
+				);
+			} catch {}
+		})();
+	</script><ul class="top-level astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/overview/" class="large astro-ywik3xcn"><span class="astro-ywik3xcn">Overview</span></a></li><li class="astro-ywik3xcn"><a href="/bunya-updates/" class="large astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya updates</span></a></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Guides</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="0"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Getting Access</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="1"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/apply-for-bunya-access/bunyaresourcedistribution/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Access Eligibility</span></a></li><li class="astro-ywik3xcn"><a href="/guides/apply-for-bunya-access/apply-for-access/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Apply for Access</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Getting Started</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="2"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/getting-started/bunya-quick-start-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Quick Start Guide</span></a></li><li class="astro-ywik3xcn"><a href="/guides/getting-started/bunyahardware/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Hardware</span></a></li><li class="astro-ywik3xcn"><a href="/guides/getting-started/general-hpc-videos/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Intro to HPC and Linux Videos</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Accessing Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="3"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/accessing-bunya/connecting-to-bunya/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Connecting to Bunya</span></a></li><li class="astro-ywik3xcn"><a href="/guides/accessing-bunya/bunya-ssh-multiplexing-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">SSH Multiplexing</span></a></li><li class="astro-ywik3xcn"><a href="/guides/accessing-bunya/basics-tmux/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Tmux</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">onBunya Web Interface</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="4"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/onbunya/ondemand-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">onBunya Guide</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Slurm Queue Manager</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="5"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/slurm/fairshare/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Fair Share</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/accounting-group-admin/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Accounting Groups and Administration</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/interactivejobs/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Interactive Jobs</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/partitions/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available Partitions</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/qos/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available QoS</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/batchjobs/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Batch Jobs</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/exampleslurmscripts/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Example Batch Slurm Scripts</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/monitoringjobs/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Monitoring and Deleting Jobs</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/slurm-tips/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Slurm Tips</span></a></li><li class="astro-ywik3xcn"><a href="/guides/slurm/expert-only-mpi-testing/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">MPI Testing for Experts Only</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Data on Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="6"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/data/bunya-userdata-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">User Data Spaces and Quotas</span></a></li><li class="astro-ywik3xcn"><a href="/guides/data/datatransfer/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Transferring Data</span></a></li><li class="astro-ywik3xcn"><a href="/guides/data/list-of-datasets/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available Data Sets and Models</span></a></li><li class="astro-ywik3xcn"><a href="/guides/data/rdm-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">UQRDM Access on Bunya</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Software on Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="7"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/software/list-of-software/" aria-current="page" class="astro-ywik3xcn"><span class="astro-ywik3xcn">List of Available Software</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/softwaremodules/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Using Available Software Modules</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/conda-environment/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Conda on Bunya</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/buildingsoftwarecompilers/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Building Your Own Software and Compilers</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/softwarecontainers/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Software Containers</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/basics-apptainer/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Apptainer (Singularity)</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/cryosparc/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">CryoSparc</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/basics-r-versions/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Available R versions</span></a></li><li class="astro-ywik3xcn"><a href="/guides/software/basics-asreml/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">ASReml</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">AI and LLM on Bunya</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="8"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/ai-llm-agents/ai-llm-guide/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">AI LLM Guide</span></a></li><li class="astro-ywik3xcn"><a href="/guides/ai-llm-agents/agents/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">AGENTS.md</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Getting Help</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="9"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/guides/getting-help/getting-help/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Getting Help</span></a></li></ul></details></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Policy</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="10"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/policy/policies/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Overview</span></a></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Conditions of Access</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="11"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/policy/conditions-of-access/bunya-conditions-of-access/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Conditions of Access</span></a></li><li class="astro-ywik3xcn"><a href="/policy/conditions-of-access/uq-conditions-of-access-to-rcc-infrastructure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">UQ Conditions of Access to RCC Infrastructure</span></a></li></ul></details></li><li class="astro-ywik3xcn"><details open class="astro-ywik3xcn"><summary class="astro-ywik3xcn"><span class="group-label astro-ywik3xcn"><span class="large astro-ywik3xcn">Local Standard Operating Procedures</span></span><svg aria-hidden="true" class="caret astro-ywik3xcn astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></summary><sl-sidebar-restore data-index="12"></sl-sidebar-restore><ul class="astro-ywik3xcn"><li class="astro-ywik3xcn"><a href="/policy/local-standard-operating-procedures/bunya-accounting-group-operational-procedure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya Accounting Group Operational Procedure</span></a></li><li class="astro-ywik3xcn"><a href="/policy/local-standard-operating-procedures/bunya-user-data-spaces-operational-procedure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya User Data Spaces Operational Procedure</span></a></li><li class="astro-ywik3xcn"><a href="/policy/local-standard-operating-procedures/bunya-user-operational-procedure/" class="astro-ywik3xcn"><span class="astro-ywik3xcn">Bunya User Operational Procedure</span></a></li></ul></details></li></ul></details></li></ul><script aria-hidden="true">
+		(() => {
+			const scroller = document.getElementById('starlight__sidebar');
+			if (!window._starlightScrollRestore || !scroller) return;
+			scroller.scrollTop = window._starlightScrollRestore;
+			delete window._starlightScrollRestore;
+		})();
+	</script></sl-sidebar-state-persist><div class="md:sl-hidden"><div class="mobile-preferences sl-flex astro-jhmwgirl"><div class="social-icons astro-jhmwgirl"></div><theme-toggle class="astro-vzsv7p5z"><button type="button" aria-label="Toggle colour theme" class="astro-vzsv7p5z"><svg aria-hidden="true" class="auto astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg><svg aria-hidden="true" class="light astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M5 12a1 1 0 0 0-1-1H3a1 1 0 0 0 0 2h1a1 1 0 0 0 1-1Zm.64 5-.71.71a1 1 0 0 0 0 1.41 1 1 0 0 0 1.41 0l.71-.71A1 1 0 0 0 5.64 17ZM12 5a1 1 0 0 0 1-1V3a1 1 0 0 0-2 0v1a1 1 0 0 0 1 1Zm5.66 2.34a1 1 0 0 0 .7-.29l.71-.71a1 1 0 1 0-1.41-1.41l-.66.71a1 1 0 0 0 0 1.41 1 1 0 0 0 .66.29Zm-12-.29a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.71-.71a1.004 1.004 0 1 0-1.43 1.41l.73.71ZM21 11h-1a1 1 0 0 0 0 2h1a1 1 0 0 0 0-2Zm-2.64 6A1 1 0 0 0 17 18.36l.71.71a1 1 0 0 0 1.41 0 1 1 0 0 0 0-1.41l-.76-.66ZM12 6.5a5.5 5.5 0 1 0 5.5 5.5A5.51 5.51 0 0 0 12 6.5Zm0 9a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm0 3.5a1 1 0 0 0-1 1v1a1 1 0 0 0 2 0v-1a1 1 0 0 0-1-1Z"/></svg><svg aria-hidden="true" class="dark astro-vzsv7p5z astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.25rem;"><path d="M21.64 13a1 1 0 0 0-1.05-.14 8.049 8.049 0 0 1-3.37.73 8.15 8.15 0 0 1-8.14-8.1 8.59 8.59 0 0 1 .25-2A1 1 0 0 0 8 2.36a10.14 10.14 0 1 0 14 11.69 1 1 0 0 0-.36-1.05Zm-9.5 6.69A8.14 8.14 0 0 1 7.08 5.22v.27a10.15 10.15 0 0 0 10.14 10.14 9.784 9.784 0 0 0 2.1-.22 8.11 8.11 0 0 1-7.18 4.32v-.04Z"/></svg></button></theme-toggle></div></div></div></sl-sidebar-pane></nav><div class="main-frame astro-y3nufrqf"><script type="module">var e=document.getElementById(`starlight__sidebar`),t=e?.querySelector(`sl-sidebar-state-persist`),n=`sl-sidebar-state`,r=()=>{let r=[],i=t?.dataset.hash||``;try{let e=sessionStorage.getItem(n),t=JSON.parse(e||`{}`);Array.isArray(t.open)&&t.hash===i&&(r=t.open)}catch{}return{hash:i,open:r,scroll:e?.scrollTop||0}},i=e=>{try{sessionStorage.setItem(n,JSON.stringify(e))}catch{}},a=()=>i(r()),o=(e,t)=>{let n=r();n.open[t]=e,i(n)};t?.addEventListener(`click`,e=>{if(!(e.target instanceof Element))return;let t=e.target.closest(`summary`)?.closest(`details`);if(!t)return;let n=t.querySelector(`sl-sidebar-restore`),r=parseInt(n?.dataset.index||``);isNaN(r)||o(!t.open,r)}),addEventListener(`visibilitychange`,()=>{document.visibilityState===`hidden`&&a()});</script><div class="lg:sl-flex astro-n673x4eg"><aside class="right-sidebar-container print:hidden astro-n673x4eg"><div class="right-sidebar astro-n673x4eg"><div class="lg:sl-hidden astro-ccg2zjtk"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-ey3vpexq"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-ey3vpexq"><details id="starlight__mobile-toc" class="astro-ey3vpexq"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-ey3vpexq"><span class="toggle sl-flex astro-ey3vpexq">On this page<svg aria-hidden="true" class="caret astro-ey3vpexq astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-ey3vpexq"></span></summary><div class="dropdown astro-ey3vpexq"><ul class="isMobile astro-qyvkd5fr" style="--depth: 0;"><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#_top" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Overview</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#overview-list" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Overview List</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#the-module-whatis-list" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">The Module WhatIs List</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#onbunya-applications" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">onBunya Applications</span></a></li></ul></div></details></nav></mobile-starlight-toc><script type="module" src="/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.C3fM4Kra.js"></script></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-ccg2zjtk"><div class="sl-container astro-ccg2zjtk"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-qyvkd5fr" style="--depth: 0;"><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#_top" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Overview</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#overview-list" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">Overview List</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#the-module-whatis-list" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">The Module WhatIs List</span></a></li><li style="--depth: 0;" class="astro-qyvkd5fr"><a href="#onbunya-applications" style="--depth: 0;" class="astro-qyvkd5fr"><span style="--depth: 0;" class="astro-qyvkd5fr">onBunya Applications</span></a></li></ul></nav></starlight-toc><script type="module" src="/_astro/TableOfContents.astro_astro_type_script_index_0_lang.BpJaGz7G.js"></script></div></div></div></aside><div class="main-pane astro-n673x4eg"><main data-pagefind-body class="astro-kwpuags7" lang="en-AU" dir="ltr"><div class="content-panel astro-4pq5mbqy"><div class="sl-container astro-4pq5mbqy"><h1 id="_top" class="astro-t5j6mvfy">List of Software on Bunya</h1></div></div><div class="content-panel astro-4pq5mbqy"><div class="sl-container astro-4pq5mbqy"><div class="sl-markdown-content"><p><strong>Updated: 26 August 2026</strong></p>
+<p>The operating system installations on Bunya nodes are relatively lightweight.
+This is done for a variety of sound technical reasons.</p>
+<p>Most software, even some things that would normally be considered part of the standard operating system, are installed separately.
+Access to this software is facilitated by the <em>modules</em> mechanism.
+Some software is made available through GUI menus in <a href="https://onbunya.rcc.uq.edu.au">onBunya</a></p>
+<p>For more information, please refer to the <a href="../softwaremodules">guide on software modules</a></p>
+<p>Most of the software listed here is freely available to use.
+Some software requires agreement to license conditions and/or authorised membership of a special access group.</p>
+<aside aria-label="NOTE" class="starlight-aside starlight-aside--note"><p class="starlight-aside__title" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" class="starlight-aside__icon"><path d="M12 11a1 1 0 0 0-1 1v4a1 1 0 0 0 2 0v-4a1 1 0 0 0-1-1Zm.38-3.92a1 1 0 0 0-.76 0 1 1 0 0 0-.33.21 1.15 1.15 0 0 0-.21.33 1 1 0 0 0 .21 1.09c.097.088.209.16.33.21A1 1 0 0 0 13 8a1.05 1.05 0 0 0-.29-.71 1 1 0 0 0-.33-.21ZM12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Zm0 18a8 8 0 1 1 0-16.001A8 8 0 0 1 12 20Z"/></svg>NOTE</p><div class="starlight-aside__content"><p>These lists have been created on login nodes.</p><p>Software built under /sw/auto will have an architecture specific installation location (login nodes are “epyc3”).<br>
+Software built under /sw/local will only be available on the architectures where they have been installed (e.g. “epyc3” but not “epyc4”).<br>
+Software built under /sw/local/…/noarch can be used on any architecture that makes sense to use. <br>
+The noarch software is either provided by software containers, or, is a commercial software product (e.g. MATLAB).<br>
+GPU nodes will have additional software for utilising (e.g. CUDA for NVidia GPU nodes) and GPU specific software.</p></div></aside>
+<div class="sl-heading-wrapper level-h2"><h2 id="overview-list">Overview List</h2><a class="sl-anchor-link" href="#overview-list"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “Overview List”</span></a></div>
+<p>This list is grouped by installation branch.</p>
+<p>It shows the name of the module and the number of distinct versions available.</p>
+<div class="expressive-code"><link rel="stylesheet" href="/_astro/ec.w36nc.css"><script type="module" src="/_astro/ec.0vx5m.js"></script><figure class="frame not-content"><figcaption class="header"></figcaption><pre data-language="plaintext"><code><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">--------------------- /sw/auto/rocky9a/epyc3/modules/all ----------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">abricate              (1)    gtk2              (1)   netcdf             (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">alsa-lib              (1)    gtk3              (2)   nettle             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">anaconda3             (2)    guile             (1)   networkx           (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ansys-dependencies    (1)    gzip              (4)   nextflow           (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ant                   (1)    harfbuzz          (3)   nghttp2            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">any2fasta             (1)    hatchling         (3)   nghttp3            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">aocl-blas             (1)    hdf               (4)   ngtcp2             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">archive-zip           (1)    hdf5              (5)   ninja              (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">archspec              (2)    help2man          (5)   nlohmann_json      (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">armadillo             (3)    hifiasm           (1)   nlopt              (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">arpack-ng             (3)    hisat2            (2)   nodejs             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">assimp                (1)    hmmer             (2)   nspr               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">at-spi2-atk           (2)    htseq             (1)   nss                (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">at-spi2-core          (2)    htslib            (3)   numactl            (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">atk                   (2)    humann            (1)   openbabel          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">augustus              (1)    hwloc             (4)   openblas           (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">autoconf              (5)    hypothesis        (4)   openexr            (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">automake              (5)    icu               (4)   openfoam           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">autotools             (5)    iimpi             (4)   openjpeg           (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bamtools              (4)    imagemagick       (2)   openmpi            (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bbmap                 (2)    imath             (3)   openpgm            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bcftools              (2)    imkl-fftw         (4)   openssl            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bcl2fastq2            (1)    imkl              (4)   p11-kit            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">beagle-lib            (2)    impi              (4)   pandoc             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">beagle                (1)    intel-compilers   (4)   pango              (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">beautifulsoup         (1)    intel             (4)   parallel           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bedtools              (4)    interproscan      (1)   paraview           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">binutils              (10)   interproscan_data (1)   patchelf           (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bio-db-hts            (1)    intervaltree      (1)   pcre               (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bio-searchio-hmmer    (1)    intltool          (3)   pcre2              (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bioperl               (2)    ipython           (1)   perl-bundle-cpan   (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">biopython             (2)    isa-l             (1)   perl               (6)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bison                 (6)    jags              (1)   picard             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blast+                (2)    jansson           (1)   pigz               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blast                 (1)    jasper            (3)   pillow             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blat                  (2)    java              (3)   pixman             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blis                  (4)    jbigkit           (4)   pkg-config         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">boost.python          (1)    jellyfish         (2)   pkgconf            (5)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">boost                 (4)    jemalloc          (3)   plink              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bowtie                (2)    json-c            (3)   plotly.py          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bowtie2               (2)    json-fortran      (1)   plumed             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">brotli                (4)    jsoncpp           (4)   pmix               (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">brunsli               (3)    judy              (2)   pocl               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">build                 (2)    julia             (1)   poetry             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">busco                 (1)    jupyter-server    (1)   popt               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bwa                   (2)    jupyterlab        (1)   postgresql         (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bzip2                 (4)    kallisto          (2)   pplacer            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">c-ares                (1)    kim-api           (2)   prodigal           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cairo                 (3)    kraken2           (1)   proj               (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">canu                  (1)    kronatools        (1)   prokka             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">capnproto             (1)    lame              (3)   prrte              (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">catch2                (3)    lammps            (2)   psutil             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cd-hit                (1)    lapack            (1)   pybigwig           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellranger-arc        (1)    lerc              (3)   pybind11           (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellranger            (1)    libaec            (1)   pydantic           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cereal                (2)    libaio            (2)   pysam              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cffi                  (3)    libarchive        (4)   python-bundle-pypi (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cfitsio               (3)    libcerf           (1)   python-isal        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cgal                  (1)    libde265          (3)   python             (6)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">checkm-database       (1)    libdeflate        (4)   pyyaml             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">checkm                (1)    libdrm            (3)   qhull              (5)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">clang                 (2)    libepoxy          (2)   qiime2             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cmake                 (6)    libev             (1)   qt5                (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">compress-raw-zlib     (1)    libevent          (5)   qt6                (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">coordgenlibs          (1)    libfabric         (4)   quantumespresso    (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cp2k                  (1)    libffi            (4)   quast              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cpio                  (2)    libgd             (2)   r-bundle-cran      (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cppy                  (2)    libgeotiff        (4)   r                  (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cryptography          (3)    libgit2           (2)   rapidjson          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cunit                 (1)    libglu            (4)   re2c               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">curl                  (4)    libglvnd          (3)   rjags              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cutadapt              (1)    libheif           (3)   rsem               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cython                (3)    libiconv          (4)   ruby               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">db                    (2)    libidn2           (2)   rust               (5)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">db_file               (2)    libint            (1)   salmon             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dbd-mysql             (1)    libjpeg-turbo     (4)   samtools           (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dbus                  (3)    libnsl            (1)   scafacos           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">deeptools             (1)    libogg            (2)   scalapack          (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dendropy              (2)    libopus           (2)   scikit-build-core  (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dftd4                 (1)    libpciaccess      (4)   scikit-build       (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">diamond               (1)    libpng            (4)   scipy-bundle       (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dirac                 (1)    libpsl            (2)   scotch             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">double-conversion     (3)    libreadline       (4)   sdl2               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">doxygen               (4)    libsndfile        (2)   sepp               (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">easybuild             (1)    libsodium         (1)   seqlib             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">eigen                 (4)    libsoup           (1)   seqtk              (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">elfutils              (1)    libtasn1          (1)   setuptools-rust    (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">elpa                  (2)    libtiff           (4)   skani              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">expat                 (4)    libtirpc          (4)   smithwaterman      (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fastahack             (1)    libtool           (5)   snakemake          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fastp                 (1)    libunistring      (2)   snappy             (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fastqc                (1)    libunwind         (3)   spaceranger        (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fasttree              (1)    libvorbis         (2)   spades             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fermi-lite            (1)    libvori           (1)   spectra            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ffmpeg                (3)    libwebp           (3)   spin               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ffnvcodec             (3)    libxc             (2)   sqlite             (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fftw.mpi              (4)    libxml2           (6)   sra-toolkit        (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fftw                  (4)    libxslt           (3)   ssw                (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">file                  (2)    libxsmm           (1)   star               (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">filevercmp            (1)    libyaml           (2)   stringtie          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">flac                  (2)    lit               (3)   suitesparse        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">flex                  (8)    littlecms         (2)   swig               (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">flexiblas             (4)    llvm              (3)   szip               (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">flit                  (3)    lmdb              (3)   tabixpp            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">flye                  (1)    lpsolve           (2)   tbb                (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fontconfig            (3)    lua               (1)   tbl2asn            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fonttools             (1)    lxml              (1)   tcl                (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">foss                  (4)    lz4               (4)   tk                 (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">freebayes             (1)    lzo               (2)   tkinter            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">freetype              (3)    m4                (8)   tmux               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fribidi               (3)    maeparser         (1)   tqdm               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fsom                  (1)    mafft             (1)   trimmomatic        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gatk                  (2)    make              (4)   trinity            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gc                    (1)    makeinfo          (2)   typing-extensions  (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gcc                   (5)    mako              (3)   ucc                (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gcccore               (5)    mariadb           (2)   ucx                (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gcta                  (1)    mash              (1)   udunits            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gdal                  (3)    matplotlib        (2)   unzip              (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gdk-pixbuf            (3)    maturin           (2)   util-linux         (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">geos                  (4)    maxquant          (1)   vcflib             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gettext               (7)    mctc-lib          (1)   vcftools           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gfbf                  (4)    mdi               (2)   vep                (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gffcompare            (1)    megahit           (1)   virtualenv         (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gffread               (1)    mesa              (3)   voro++             (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ghostscript           (2)    meson-python      (3)   vscode             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">giflib                (4)    meson             (4)   vtk                (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">git                   (4)    metaeuk           (2)   wayland            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gitpython             (1)    metis             (1)   wfa2               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">glib-networking       (1)    miller            (1)   wget               (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">glib                  (3)    miniconda3        (2)   x11                (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">glpk                  (2)    minimap2          (1)   x264               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gmap-gsnap            (2)    miniprot          (1)   x265               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gmp                   (3)    mono              (1)   xerces-c++         (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gnuplot               (1)    motif             (1)   xml-libxml         (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gnutls                (1)    mpfr              (3)   xorg-macros        (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">go                    (4)    mpi4py            (3)   xtb                (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gobject-introspection (3)    mrbayes           (2)   xvfb               (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gompi                 (8)    mstore            (1)   xxd                (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">googletest            (4)    multicharge       (1)   xz                 (4)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gperf                 (3)    multichoose       (1)   yasm               (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">graphite2             (3)    multiqc           (1)   z3                 (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">groff                 (3)    mummer            (1)   zeromq             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gromacs               (3)    nasm              (4)   zip                (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gsl                   (3)    ncbi-vdb          (2)   zlib               (9)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gtdb-tk               (1)    ncurses           (7)   zstd               (4)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">--------------------- /sw/local/rocky8/epyc3/rcc/modules ----------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bolt-lmm (1)   hdf5   (1)   lisflood-fp   (4)   rjags (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dirac    (1)   jags   (1)   r-bundle-cran (1)   vasp  (6)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">eagleimp (1)   libaec (1)   r             (2)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">--------------------- /sw/local/rocky8/noarch/rcc/modules ---------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">alphafast      (1)   epi2me         (1)   openfold          (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">alphafold      (4)   esa-snap       (1)   orca              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">alphapickle    (1)   evobind        (1)   osca              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">amst2          (1)   fastfold       (1)   paraview          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ansys          (3)   fbpic          (1)   perceval-quandela (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ansysem        (1)   fiji           (3)   porechop_abi      (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">asreml-sa      (3)   fragpipe       (1)   post              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">asreml-sa_test (1)   freesurfer     (1)   prism             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">aviary         (4)   fsl            (1)   proteina-complexa (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bagel          (1)   gaussian       (1)   proteinfold       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bakta          (1)   gromacs        (4)   proteinmpnn       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">basespace      (1)   gtdb-tk        (3)   pyem              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">binchicken     (1)   gurobi         (4)   qctool            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bindcraft      (3)   humann         (1)   quilt             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">bioformats2raw (1)   huygens        (4)   qupath            (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">boltz          (3)   ilastik        (2)   r                 (6)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">boltzgen       (1)   imod           (2)   relion            (9)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">carpdock       (1)   interproscan   (1)   remora            (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cebraem        (1)   ipyrad         (1)   rfantibody        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellpose       (2)   itk-snap       (1)   rfdiffusion       (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellprofiler   (1)   jobstats       (1)   rosetta           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellsnp-lite   (1)   julia          (1)   rstudio           (9)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">chai-lab       (2)   ligandmpnn     (1)   scenicplus        (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">chimerax       (1)   llama.cpp      (3)   schrodinger       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">chrombpnet     (1)   localcolabfold (3)   sglang            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cistem         (1)   mathematica    (1)   slorado           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">code-server    (4)   matlab         (3)   spisonet          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">compucell3d    (1)   medaka         (3)   spss              (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">coot           (2)   metabolic      (1)   star-ccm+         (3)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cramino        (1)   metaphlan      (2)   strainberry       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">crested        (2)   miniforge      (4)   subtom            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">crisflash      (1)   minimap2       (1)   suite2p           (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cryocare       (1)   mmseqs         (2)   tesseract         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cryodrgn       (2)   mobsuite       (1)   topaz             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cuda-q         (4)   model-angelo   (1)   transcriptm       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">deeplabcut     (5)   mrtrix         (1)   triqs             (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">diann          (2)   nastic         (1)   ultralytics       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">diffdock       (1)   nnu-net        (1)   virtualgl         (2)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dl-jupyter     (2)   ollama         (1)   vllm              (5)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dorado         (1)   openclip       (2)   wombat            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dynamo         (1)   openfoam       (1)   xds               (1)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">--------------------- /sw/local/rocky9/noarch/rcc/modules ---------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ansys         (5)   deeptmhmm     (1)   huygens    (2)   pclai     (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">autodock-gpu  (1)   diamond       (1)   lastools   (1)   proteinix (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">autodock-vina (1)   eggnog-mapper (1)   lexicmap   (1)   space     (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">clustal-omega (1)   evo2          (1)   macs2      (1)   star-ccm+ (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">coverm        (1)   group_envs    (1)   nanomotif  (1)   vasp      (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">crest         (1)   gtdb-tk       (1)   parabricks (1)</span></div></div><div class="ec-line"><div class="code">
+</div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">-------------------- /sw/local/rocky8/noarch/qcif/modules ---------------------</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">3d-dna              (1)   isoseq3         (1)   raxml           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">biobakery_workflows (1)   juicer          (1)   regenie         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">blast               (1)   kallisto        (1)   repeatmasker    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">braker3             (1)   kofamscan       (1)   repeatmodeler   (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">cellbender          (1)   ldsc            (1)   rmats-turbo     (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">celseq2             (1)   maker           (1)   rsem            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">circlator           (1)   medaka          (1)   salsa2          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dadi                (1)   mikado          (1)   screen_assembly (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dfam                (1)   mira            (1)   scvelo          (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">diamond             (1)   mixer           (1)   shovill         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">dram                (1)   mlst            (1)   shpc            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">drep                (1)   mmseqs2         (1)   singlem         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">edirect             (1)   mtag            (1)   snap            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">enrichm             (1)   nanocompore     (1)   sortmerna       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">exonerate           (1)   nanopolish      (1)   sqanti3         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">f5c                 (1)   nextpolish      (1)   sra-tools       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">fastool             (1)   nextpolish2     (1)   srst2           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gcta                (1)   ont-fast5-api   (1)   star            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gff3sort            (1)   parsnp          (1)   suppa           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gmap                (1)   pb-assembly     (1)   syri            (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">gtdbtk              (1)   pear            (1)   transdecoder    (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">hapflk              (1)   qapa            (1)   trinity         (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">harvesttools        (1)   qiime2-amplicon (1)   trinotate       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">hisat2              (1)   qiime2-shotgun  (1)   unicycler       (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">ipyrad              (2)   racon           (1)   xpore           (1)</span></div></div><div class="ec-line"><div class="code"><span style="--0:#d6deeb;--1:#403f53">iqtree              (1)   ratatosk        (1)</span></div></div></code></pre><div class="copy"><div aria-live="polite"></div><button title="Copy to clipboard" data-copied="Copied!" data-code="--------------------- /sw/auto/rocky9a/epyc3/modules/all ----------------------abricate              (1)    gtk2              (1)   netcdf             (4)alsa-lib              (1)    gtk3              (2)   nettle             (3)anaconda3             (2)    guile             (1)   networkx           (3)ansys-dependencies    (1)    gzip              (4)   nextflow           (3)ant                   (1)    harfbuzz          (3)   nghttp2            (1)any2fasta             (1)    hatchling         (3)   nghttp3            (1)aocl-blas             (1)    hdf               (4)   ngtcp2             (1)archive-zip           (1)    hdf5              (5)   ninja              (4)archspec              (2)    help2man          (5)   nlohmann_json      (4)armadillo             (3)    hifiasm           (1)   nlopt              (2)arpack-ng             (3)    hisat2            (2)   nodejs             (3)assimp                (1)    hmmer             (2)   nspr               (3)at-spi2-atk           (2)    htseq             (1)   nss                (3)at-spi2-core          (2)    htslib            (3)   numactl            (4)atk                   (2)    humann            (1)   openbabel          (1)augustus              (1)    hwloc             (4)   openblas           (4)autoconf              (5)    hypothesis        (4)   openexr            (3)automake              (5)    icu               (4)   openfoam           (1)autotools             (5)    iimpi             (4)   openjpeg           (4)bamtools              (4)    imagemagick       (2)   openmpi            (4)bbmap                 (2)    imath             (3)   openpgm            (1)bcftools              (2)    imkl-fftw         (4)   openssl            (2)bcl2fastq2            (1)    imkl              (4)   p11-kit            (1)beagle-lib            (2)    impi              (4)   pandoc             (1)beagle                (1)    intel-compilers   (4)   pango              (3)beautifulsoup         (1)    intel             (4)   parallel           (2)bedtools              (4)    interproscan      (1)   paraview           (1)binutils              (10)   interproscan_data (1)   patchelf           (3)bio-db-hts            (1)    intervaltree      (1)   pcre               (4)bio-searchio-hmmer    (1)    intltool          (3)   pcre2              (4)bioperl               (2)    ipython           (1)   perl-bundle-cpan   (2)biopython             (2)    isa-l             (1)   perl               (6)bison                 (6)    jags              (1)   picard             (1)blast+                (2)    jansson           (1)   pigz               (1)blast                 (1)    jasper            (3)   pillow             (2)blat                  (2)    java              (3)   pixman             (3)blis                  (4)    jbigkit           (4)   pkg-config         (1)boost.python          (1)    jellyfish         (2)   pkgconf            (5)boost                 (4)    jemalloc          (3)   plink              (1)bowtie                (2)    json-c            (3)   plotly.py          (1)bowtie2               (2)    json-fortran      (1)   plumed             (3)brotli                (4)    jsoncpp           (4)   pmix               (4)brunsli               (3)    judy              (2)   pocl               (1)build                 (2)    julia             (1)   poetry             (3)busco                 (1)    jupyter-server    (1)   popt               (1)bwa                   (2)    jupyterlab        (1)   postgresql         (2)bzip2                 (4)    kallisto          (2)   pplacer            (1)c-ares                (1)    kim-api           (2)   prodigal           (2)cairo                 (3)    kraken2           (1)   proj               (4)canu                  (1)    kronatools        (1)   prokka             (1)capnproto             (1)    lame              (3)   prrte              (2)catch2                (3)    lammps            (2)   psutil             (1)cd-hit                (1)    lapack            (1)   pybigwig           (1)cellranger-arc        (1)    lerc              (3)   pybind11           (4)cellranger            (1)    libaec            (1)   pydantic           (1)cereal                (2)    libaio            (2)   pysam              (1)cffi                  (3)    libarchive        (4)   python-bundle-pypi (3)cfitsio               (3)    libcerf           (1)   python-isal        (1)cgal                  (1)    libde265          (3)   python             (6)checkm-database       (1)    libdeflate        (4)   pyyaml             (2)checkm                (1)    libdrm            (3)   qhull              (5)clang                 (2)    libepoxy          (2)   qiime2             (1)cmake                 (6)    libev             (1)   qt5                (2)compress-raw-zlib     (1)    libevent          (5)   qt6                (1)coordgenlibs          (1)    libfabric         (4)   quantumespresso    (2)cp2k                  (1)    libffi            (4)   quast              (1)cpio                  (2)    libgd             (2)   r-bundle-cran      (2)cppy                  (2)    libgeotiff        (4)   r                  (4)cryptography          (3)    libgit2           (2)   rapidjson          (1)cunit                 (1)    libglu            (4)   re2c               (3)curl                  (4)    libglvnd          (3)   rjags              (1)cutadapt              (1)    libheif           (3)   rsem               (1)cython                (3)    libiconv          (4)   ruby               (1)db                    (2)    libidn2           (2)   rust               (5)db_file               (2)    libint            (1)   salmon             (2)dbd-mysql             (1)    libjpeg-turbo     (4)   samtools           (3)dbus                  (3)    libnsl            (1)   scafacos           (2)deeptools             (1)    libogg            (2)   scalapack          (4)dendropy              (2)    libopus           (2)   scikit-build-core  (1)dftd4                 (1)    libpciaccess      (4)   scikit-build       (3)diamond               (1)    libpng            (4)   scipy-bundle       (4)dirac                 (1)    libpsl            (2)   scotch             (1)double-conversion     (3)    libreadline       (4)   sdl2               (3)doxygen               (4)    libsndfile        (2)   sepp               (2)easybuild             (1)    libsodium         (1)   seqlib             (1)eigen                 (4)    libsoup           (1)   seqtk              (4)elfutils              (1)    libtasn1          (1)   setuptools-rust    (3)elpa                  (2)    libtiff           (4)   skani              (1)expat                 (4)    libtirpc          (4)   smithwaterman      (1)fastahack             (1)    libtool           (5)   snakemake          (1)fastp                 (1)    libunistring      (2)   snappy             (3)fastqc                (1)    libunwind         (3)   spaceranger        (2)fasttree              (1)    libvorbis         (2)   spades             (1)fermi-lite            (1)    libvori           (1)   spectra            (1)ffmpeg                (3)    libwebp           (3)   spin               (1)ffnvcodec             (3)    libxc             (2)   sqlite             (4)fftw.mpi              (4)    libxml2           (6)   sra-toolkit        (2)fftw                  (4)    libxslt           (3)   ssw                (1)file                  (2)    libxsmm           (1)   star               (2)filevercmp            (1)    libyaml           (2)   stringtie          (1)flac                  (2)    lit               (3)   suitesparse        (1)flex                  (8)    littlecms         (2)   swig               (4)flexiblas             (4)    llvm              (3)   szip               (4)flit                  (3)    lmdb              (3)   tabixpp            (1)flye                  (1)    lpsolve           (2)   tbb                (3)fontconfig            (3)    lua               (1)   tbl2asn            (1)fonttools             (1)    lxml              (1)   tcl                (4)foss                  (4)    lz4               (4)   tk                 (3)freebayes             (1)    lzo               (2)   tkinter            (2)freetype              (3)    m4                (8)   tmux               (1)fribidi               (3)    maeparser         (1)   tqdm               (1)fsom                  (1)    mafft             (1)   trimmomatic        (1)gatk                  (2)    make              (4)   trinity            (1)gc                    (1)    makeinfo          (2)   typing-extensions  (1)gcc                   (5)    mako              (3)   ucc                (4)gcccore               (5)    mariadb           (2)   ucx                (4)gcta                  (1)    mash              (1)   udunits            (2)gdal                  (3)    matplotlib        (2)   unzip              (4)gdk-pixbuf            (3)    maturin           (2)   util-linux         (3)geos                  (4)    maxquant          (1)   vcflib             (1)gettext               (7)    mctc-lib          (1)   vcftools           (2)gfbf                  (4)    mdi               (2)   vep                (1)gffcompare            (1)    megahit           (1)   virtualenv         (3)gffread               (1)    mesa              (3)   voro++             (2)ghostscript           (2)    meson-python      (3)   vscode             (1)giflib                (4)    meson             (4)   vtk                (2)git                   (4)    metaeuk           (2)   wayland            (2)gitpython             (1)    metis             (1)   wfa2               (1)glib-networking       (1)    miller            (1)   wget               (1)glib                  (3)    miniconda3        (2)   x11                (3)glpk                  (2)    minimap2          (1)   x264               (3)gmap-gsnap            (2)    miniprot          (1)   x265               (3)gmp                   (3)    mono              (1)   xerces-c++         (3)gnuplot               (1)    motif             (1)   xml-libxml         (2)gnutls                (1)    mpfr              (3)   xorg-macros        (4)go                    (4)    mpi4py            (3)   xtb                (1)gobject-introspection (3)    mrbayes           (2)   xvfb               (2)gompi                 (8)    mstore            (1)   xxd                (3)googletest            (4)    multicharge       (1)   xz                 (4)gperf                 (3)    multichoose       (1)   yasm               (3)graphite2             (3)    multiqc           (1)   z3                 (2)groff                 (3)    mummer            (1)   zeromq             (1)gromacs               (3)    nasm              (4)   zip                (1)gsl                   (3)    ncbi-vdb          (2)   zlib               (9)gtdb-tk               (1)    ncurses           (7)   zstd               (4)--------------------- /sw/local/rocky8/epyc3/rcc/modules ----------------------bolt-lmm (1)   hdf5   (1)   lisflood-fp   (4)   rjags (1)dirac    (1)   jags   (1)   r-bundle-cran (1)   vasp  (6)eagleimp (1)   libaec (1)   r             (2)--------------------- /sw/local/rocky8/noarch/rcc/modules ---------------------alphafast      (1)   epi2me         (1)   openfold          (3)alphafold      (4)   esa-snap       (1)   orca              (1)alphapickle    (1)   evobind        (1)   osca              (1)amst2          (1)   fastfold       (1)   paraview          (1)ansys          (3)   fbpic          (1)   perceval-quandela (1)ansysem        (1)   fiji           (3)   porechop_abi      (1)asreml-sa      (3)   fragpipe       (1)   post              (1)asreml-sa_test (1)   freesurfer     (1)   prism             (1)aviary         (4)   fsl            (1)   proteina-complexa (1)bagel          (1)   gaussian       (1)   proteinfold       (1)bakta          (1)   gromacs        (4)   proteinmpnn       (1)basespace      (1)   gtdb-tk        (3)   pyem              (1)binchicken     (1)   gurobi         (4)   qctool            (1)bindcraft      (3)   humann         (1)   quilt             (1)bioformats2raw (1)   huygens        (4)   qupath            (3)boltz          (3)   ilastik        (2)   r                 (6)boltzgen       (1)   imod           (2)   relion            (9)carpdock       (1)   interproscan   (1)   remora            (2)cebraem        (1)   ipyrad         (1)   rfantibody        (1)cellpose       (2)   itk-snap       (1)   rfdiffusion       (2)cellprofiler   (1)   jobstats       (1)   rosetta           (1)cellsnp-lite   (1)   julia          (1)   rstudio           (9)chai-lab       (2)   ligandmpnn     (1)   scenicplus        (1)chimerax       (1)   llama.cpp      (3)   schrodinger       (1)chrombpnet     (1)   localcolabfold (3)   sglang            (1)cistem         (1)   mathematica    (1)   slorado           (2)code-server    (4)   matlab         (3)   spisonet          (1)compucell3d    (1)   medaka         (3)   spss              (1)coot           (2)   metabolic      (1)   star-ccm+         (3)cramino        (1)   metaphlan      (2)   strainberry       (1)crested        (2)   miniforge      (4)   subtom            (1)crisflash      (1)   minimap2       (1)   suite2p           (2)cryocare       (1)   mmseqs         (2)   tesseract         (1)cryodrgn       (2)   mobsuite       (1)   topaz             (1)cuda-q         (4)   model-angelo   (1)   transcriptm       (1)deeplabcut     (5)   mrtrix         (1)   triqs             (1)diann          (2)   nastic         (1)   ultralytics       (1)diffdock       (1)   nnu-net        (1)   virtualgl         (2)dl-jupyter     (2)   ollama         (1)   vllm              (5)dorado         (1)   openclip       (2)   wombat            (1)dynamo         (1)   openfoam       (1)   xds               (1)--------------------- /sw/local/rocky9/noarch/rcc/modules ---------------------ansys         (5)   deeptmhmm     (1)   huygens    (2)   pclai     (1)autodock-gpu  (1)   diamond       (1)   lastools   (1)   proteinix (1)autodock-vina (1)   eggnog-mapper (1)   lexicmap   (1)   space     (1)clustal-omega (1)   evo2          (1)   macs2      (1)   star-ccm+ (1)coverm        (1)   group_envs    (1)   nanomotif  (1)   vasp      (1)crest         (1)   gtdb-tk       (1)   parabricks (1)-------------------- /sw/local/rocky8/noarch/qcif/modules ---------------------3d-dna              (1)   isoseq3         (1)   raxml           (1)biobakery_workflows (1)   juicer          (1)   regenie         (1)blast               (1)   kallisto        (1)   repeatmasker    (1)braker3             (1)   kofamscan       (1)   repeatmodeler   (1)cellbender          (1)   ldsc            (1)   rmats-turbo     (1)celseq2             (1)   maker           (1)   rsem            (1)circlator           (1)   medaka          (1)   salsa2          (1)dadi                (1)   mikado          (1)   screen_assembly (1)dfam                (1)   mira            (1)   scvelo          (1)diamond             (1)   mixer           (1)   shovill         (1)dram                (1)   mlst            (1)   shpc            (1)drep                (1)   mmseqs2         (1)   singlem         (1)edirect             (1)   mtag            (1)   snap            (1)enrichm             (1)   nanocompore     (1)   sortmerna       (1)exonerate           (1)   nanopolish      (1)   sqanti3         (1)f5c                 (1)   nextpolish      (1)   sra-tools       (1)fastool             (1)   nextpolish2     (1)   srst2           (1)gcta                (1)   ont-fast5-api   (1)   star            (1)gff3sort            (1)   parsnp          (1)   suppa           (1)gmap                (1)   pb-assembly     (1)   syri            (1)gtdbtk              (1)   pear            (1)   transdecoder    (1)hapflk              (1)   qapa            (1)   trinity         (1)harvesttools        (1)   qiime2-amplicon (1)   trinotate       (1)hisat2              (1)   qiime2-shotgun  (1)   unicycler       (1)ipyrad              (2)   racon           (1)   xpore           (1)iqtree              (1)   ratatosk        (1)"><div></div></button></div></figure></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="the-module-whatis-list">The Module WhatIs List</h2><a class="sl-anchor-link" href="#the-module-whatis-list"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “The Module WhatIs List”</span></a></div>
+<p><em>TO BE COMPLETED</em></p>
+<div class="sl-heading-wrapper level-h2"><h2 id="onbunya-applications">onBunya Applications</h2><a class="sl-anchor-link" href="#onbunya-applications"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 1 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 0 0-1.42-1.42m8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 1 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l3.88-3.89a4.49 4.49 0 0 0 0-6.33M8.83 15.17a1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.92-4.92a1 1 0 1 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42"></path></svg></span><span class="sr-only" data-pagefind-ignore>Section titled “onBunya Applications”</span></a></div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left">Application</th>
+<th style="text-align: center">Category 1</th>
+<th style="text-align: center">Category 2</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left">3dslicer (4.10.1)</td>
+<td style="text-align: center">General-Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">3dslicer (5.12.0)</td>
+<td style="text-align: center">General-imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">3dslicer (5.12.3)</td>
+<td style="text-align: center">General-imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">3dslicer (5.8.1)</td>
+<td style="text-align: center">General-imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Adxv</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">AFNI</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">AlphaFold 2.3.2</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">ANTs</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">BIDScoin</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Blender</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Cellpose 3.1.0</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Cellpose-SAM</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Cellprofiler 4.2.1</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Cytometry</td>
+</tr>
+<tr>
+<td style="text-align: left">Cellprofiler 4.2.8.1</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Cytometry</td>
+</tr>
+<tr>
+<td style="text-align: left">ChimeraX 1.12</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">CisTEM 2</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">CisTEM</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">ComfyUI</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">CompuCell3D</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Coot 0.9.8.92</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Cryolo</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">CryoSPARC</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">CryoSPARC updater (to 5.0.4)</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Crystfel</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">Cytoscape</td>
+<td style="text-align: center">Bioinformatics</td>
+<td style="text-align: center">Cytometry</td>
+</tr>
+<tr>
+<td style="text-align: left">DeepLabCut 2.3.11 (AMD GPU)</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">DeepLabCut 2.3.8 (NVidia GPU)</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">DeepLabCut 3.0.0rc10 (AMD GPU)</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">DeepLabCut 3.0.0rc10 (NVidia GPU)</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">DIA-NN</td>
+<td style="text-align: center">Bioinformatics</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Diffusion Toolkit</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Dynamo 1.1.532</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">EMAN 2.3</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Empanada (Napari)</td>
+<td style="text-align: center">General-imaging</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">EPI2ME</td>
+<td style="text-align: center">Bioinformatics</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">ESA SNAP 10.0.0</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">ESA SNAP 9.0</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Eye of MATE Image Viewer</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.53</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54h</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54h (No Cellpose)</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54k</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54k (No Cellpose)</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54p</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54q</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Fiji 1.54t</td>
+<td style="text-align: center">Fiji</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">FoldDock</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">FragPipe</td>
+<td style="text-align: center">Struct-bio</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Freesurfer 7.3.2</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">FSL 5.0</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">FSL 6.0.7.9</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">HRM Online - Huygens Core</td>
+<td style="text-align: center">Scientific</td>
+<td style="text-align: center">Volume</td>
+</tr>
+<tr>
+<td style="text-align: left">Huygens Essential</td>
+<td style="text-align: center">Scientific</td>
+<td style="text-align: center">Volume</td>
+</tr>
+<tr>
+<td style="text-align: left">Huygens Localizer</td>
+<td style="text-align: center">Scientific</td>
+<td style="text-align: center">Volume</td>
+</tr>
+<tr>
+<td style="text-align: left">Huygens Professional</td>
+<td style="text-align: center">Scientific</td>
+<td style="text-align: center">Volume</td>
+</tr>
+<tr>
+<td style="text-align: left">IGV</td>
+<td style="text-align: center">Bioinformatics</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Ilastik 1.4.1</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Cytometry</td>
+</tr>
+<tr>
+<td style="text-align: left">IMOD 4.11.4</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">IMOD 4.12.62</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">IMOD 4.9.9</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">IMOD 5.1.1</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">IMOD-RAZA</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">ITK-SNAP (4.2.0)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">ITK-SNAP (4.4.0)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Jupyter notebook</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">LabGym 2.8.1</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">LiberTEM</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">LibreOffice</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">LLAma.cpp</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Mathematica 14.0</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Matlab 2022a6</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Matlab 2023b5</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Matlab MCR (v93, for R2017b)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Matlab MCR (v97, for R2019b)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">MIB</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Minc Tools</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Model-angelo</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">MolSketch</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">MrTrix 3.0.8</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">MrTrix 3</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">MrTrix</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Napari (0.4.10)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Napari (0.5.3)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Napari (0.6.2)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">NoiseTransfer2Clean</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Octave 9.2.0</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Olex2</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">OMERO.insight</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Light-microscopy</td>
+</tr>
+<tr>
+<td style="text-align: left">Open WebUI</td>
+<td style="text-align: center">AI-ML</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Paraview</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Phenix 1.20.1</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Phenix 1.21.1</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Phenix 2.1 (no GPU)</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Phenix 2.1 (NVidia GPU)</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">PyEM</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">PyMOL</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">QGIS</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">QuPath 0.7.0</td>
+<td style="text-align: center">Cytometry</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">Relion 4.0</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Relion 5.0.1</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Rstudio 2024.04.2 (R 4.4.1)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Rstudio 2024.12.0 (R 4.4.2, 25k pkgs)</td>
+<td style="text-align: center">Rstudio</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Rstudio 2024.12.1 (R 4.4.2, 1200 pkgs)</td>
+<td style="text-align: center">Rstudio</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Rstudio 2025.05.1 (R 4.5.1)</td>
+<td style="text-align: center">Rstudio</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Rstudio 2026.01.0 (R 4.5.2)</td>
+<td style="text-align: center">Rstudio</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Rstudio 2026.07.0 (R 4.6.1)</td>
+<td style="text-align: center">Rstudio</td>
+<td style="text-align: center"></td>
+</tr>
+<tr>
+<td style="text-align: left">Schrodinger Maestro</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">ScigetApp</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Scipion3</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Scipion3 (with Relion)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Scipion3 (with XmippSrc)</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">SHELX</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">ShelXle</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Sir2019</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">SPHIRE 1.4</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">SPM 12</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">CVL</td>
+</tr>
+<tr>
+<td style="text-align: left">Spyder</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">StaMPS</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-scientific</td>
+</tr>
+<tr>
+<td style="text-align: left">Suite2p</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">THUNDER</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">TomoBear 0.6.0</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">Topaz</td>
+<td style="text-align: center">CryoEM</td>
+<td style="text-align: center">Cryo-EM</td>
+</tr>
+<tr>
+<td style="text-align: left">TrackVis</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">TrackVis shell</td>
+<td style="text-align: center">Imaging</td>
+<td style="text-align: center">Neuroimaging</td>
+</tr>
+<tr>
+<td style="text-align: left">VESTA</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">VLC Media Player</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">VMD 2.0.1a1</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">VMD</td>
+<td style="text-align: center">Misc</td>
+<td style="text-align: center">General-imaging</td>
+</tr>
+<tr>
+<td style="text-align: left">XDS 2021</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+<tr>
+<td style="text-align: left">XDS 2025</td>
+<td style="text-align: center">Crystallography</td>
+<td style="text-align: center">Struct-bio</td>
+</tr>
+</tbody>
+</table>
+</div><footer class="sl-flex astro-77pjwswi"><div class="meta sl-flex astro-77pjwswi"><a href="https://github.com/UQ-RCC/platform-docs/edit/main/sites/hpc/src/content/docs/guides/Software/List-of-Software.md" class="sl-flex print:hidden astro-jkdjgyns"><svg aria-hidden="true" class="astro-jkdjgyns astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.2em;"><path d="M22 7.24a1 1 0 0 0-.29-.71l-4.24-4.24a1 1 0 0 0-1.1-.22 1 1 0 0 0-.32.22l-2.83 2.83L2.29 16.05a1 1 0 0 0-.29.71V21a1 1 0 0 0 1 1h4.24a1 1 0 0 0 .76-.29l10.87-10.93L21.71 8c.1-.1.17-.2.22-.33a1 1 0 0 0 0-.24v-.14l.07-.05ZM6.83 20H4v-2.83l9.93-9.93 2.83 2.83L6.83 20ZM18.17 8.66l-2.83-2.83 1.42-1.41 2.82 2.82-1.41 1.42Z"/></svg>Edit page</a></div><div class="pagination-links print:hidden astro-hrymgie4" dir="ltr"><a href="/guides/data/rdm-guide/" rel="prev" class="astro-hrymgie4"><svg aria-hidden="true" class="astro-hrymgie4 astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg><span class="astro-hrymgie4">Previous<br class="astro-hrymgie4"><span class="link-title astro-hrymgie4">UQRDM Access on Bunya</span></span></a><a href="/guides/software/softwaremodules/" rel="next" class="astro-hrymgie4"><svg aria-hidden="true" class="astro-hrymgie4 astro-gceii4hh" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg><span class="astro-hrymgie4">Next<br class="astro-hrymgie4"><span class="link-title astro-hrymgie4">Using Available Software Modules</span></span></a></div></footer></div></div></main></div></div></div></div></body></html>
